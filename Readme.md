@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ирина Кисель](https://up.htmlacademy.ru/adaptive/23/user/1734435).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Артёмов`(https://htmlacademy.ru/profile/firefoxic).
 
 ---
 

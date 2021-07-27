@@ -11,7 +11,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
-    "test": "npm run editorconfig && w3c-html-validator source/*.html"
+    "test": "npm run editorconfig && w3c-html-validator source"
   },
   "editorconfig-cli": [
     "*.json",

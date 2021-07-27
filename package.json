@@ -5,12 +5,13 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.10"
+    "stylelint-config-htmlacademy": "0.1.10",
+    "w3c-html-validator": "^0.7.9"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
-    "test": "npm run editorconfig"
+    "test": "npm run editorconfig && w3c-html-validator source/*.html"
   },
   "editorconfig-cli": [
     "*.json",

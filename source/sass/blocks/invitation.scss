@@ -1,0 +1,42 @@
+.invitation {
+  &__wrapper {
+    width: 320px;
+    height: 302px;
+    background-color: rgba(104, 183, 56, 1);
+    background-image: url("../../img/background-cat.png"), linear-gradient(rgba (104, 183, 56, 0.85), rgba (104, 183, 56, 0.85));
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    margin-bottom: 150px;
+  }
+
+  &__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__description {
+    font-family: "Oswald", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 44px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgba(104, 183, 56, 1);
+  }
+}
+

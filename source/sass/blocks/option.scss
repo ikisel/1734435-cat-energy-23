@@ -1,0 +1,13 @@
+.option {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    width: 280px;
+    background-color: rgba(242, 242, 242, 1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+}

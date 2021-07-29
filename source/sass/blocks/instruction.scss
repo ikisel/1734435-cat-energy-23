@@ -1,0 +1,25 @@
+.instruction {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    padding: 10px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__description {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}

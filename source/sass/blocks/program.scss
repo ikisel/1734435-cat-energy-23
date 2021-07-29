@@ -1,0 +1,56 @@
+.program {
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__image-slim {
+    display: grid;
+    width: 50px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: rgba(104, 186, 53, 1);
+
+    &::after {
+      content: "";
+      place-self: center;
+      width: 36px;
+      height: 50px;
+      background-image: url("../../img/cat-slim.svg");
+    }
+  }
+
+  &__description {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba(68, 68, 68, 1);
+  }
+
+  &__link-wrapper {
+    border-top: 1px solid rgba(217, 217, 217, 1);
+    padding-top: 15px;
+  }
+
+  &__link {
+    display: flex;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+
+    &::after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 10px;
+      background-image: url("../../img/arrow.svg");
+    }
+  }
+}

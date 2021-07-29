@@ -1,0 +1,45 @@
+.rezults {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(205, 205, 205, 1);
+    border-radius: 3px;
+
+    &--total {
+      grid-row: 2/3;
+      grid-column: 1/-1;
+      display: flex;
+      justify-content: space-between;
+      border: none;
+    }
+  }
+
+  &__amount {
+    font-size: 24px;
+    line-height: 24px;
+
+    &--total {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 1);
+      text-transform: uppercase;
+    }
+  }
+
+  &__definition {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: 400;
+    color: rgba(68, 68, 68, 1);
+
+    &--total {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 1);
+      text-transform: uppercase;
+    }
+  }
+}

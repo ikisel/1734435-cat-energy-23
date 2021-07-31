@@ -1,13 +1,13 @@
 .option {
-  &__wrapper {
+  .option__wrapper {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  &__item {
-    width: 280px;
+  .option__item {
     background-color: rgba(242, 242, 242, 1);
     margin-bottom: 20px;
-    padding: 20px;
   }
 }

@@ -1,11 +1,13 @@
 .toggle {
-  &__button {
+  .toggle__button {
     box-sizing: border-box;
     padding: 10px;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
     text-transform: uppercase;
     border: none;
+    background: transparent;
   }
 }

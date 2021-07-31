@@ -1,13 +1,14 @@
 .program {
-  &__title {
-    font-weight: 400;
+  .program__title {
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 24px;
     line-height: 37px;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
   }
 
-  &__image-slim {
+  .program__image-slim {
     display: grid;
     width: 50px;
     height: 53px;
@@ -23,27 +24,28 @@
     }
   }
 
-  &__description {
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: rgba(68, 68, 68, 1);
+  .program__description {
+    color: var(--special);
+    padding-left: 22px;
+    padding-right: 33px;
+    padding-bottom: 23px;
   }
 
-  &__link-wrapper {
-    border-top: 1px solid rgba(217, 217, 217, 1);
+  .program__link-wrapper {
+    border-top: 1px solid var(--basic-medium-grey);
     padding-top: 15px;
   }
 
-  &__link {
+  .program__link {
     display: flex;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-    color: rgba(0, 0, 0, 1);
+    color: var(--basic-black);
+    padding: 10px;
 
     &::after {
       content: "";

@@ -1,0 +1,12 @@
+.social {
+  .social__list {
+    display: flex;
+    margin: 0;
+    padding: 20px 0 21px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--basic-medium-grey);
+    border-bottom: 1px solid var(--basic-medium-grey);
+  }
+}

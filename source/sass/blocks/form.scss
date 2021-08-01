@@ -1,0 +1,92 @@
+.form {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+
+    &--legend {
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .form__description {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .form__label {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--special);
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+
+  .form__input {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-transform: uppercase;
+    color: var(--special);
+    border: 1px solid var (--basic-light-grey);
+
+    &--email {
+      border: 1px solid var (--special-grey);
+    }
+  }
+
+  .form__field {
+    margin-bottom: 10px;
+  }
+
+  .form__fieldset {
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  .form__textarea {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--special);
+    text-transform: uppercase;
+  }
+
+  .form__button {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    background-color: var(--basic-green);
+    border: none;
+    color: var(--basic-white);
+  }
+
+  .form__notice {
+    line-height: 16px;
+    text-align: center;
+  }
+}

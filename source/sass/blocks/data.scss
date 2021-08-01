@@ -1,0 +1,27 @@
+.data {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .data__item {
+    border-bottom: 1px solid var(--special-grey);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+  }
+
+  .data__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--special-warm-dark);
+  }
+
+  .data__button {
+    background-color: var(--basic-green);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}

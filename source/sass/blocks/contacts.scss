@@ -6,6 +6,10 @@
     padding-bottom: 26px;
     padding-left: 20px;
     padding-right: 20px;
+
+    &--catalog {
+      background-color: var(--basic-grey);
+    }
   }
 
   .contacts__text {
@@ -15,6 +19,10 @@
     font-weight: 400;
     text-transform: uppercase;
     color: var(--special-dark);
+
+    &--catalog {
+      line-height: 18px;
+    }
   }
 
   .contacts__location {

@@ -1,0 +1,27 @@
+.gift {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .gift__aside {
+    background-image: url("../../img/background-gift.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .gift__description {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--basic-white);
+    padding: 30px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 78px;
+      height: 80px;
+      margin: 0 auto;
+      background-image: url("../../img/icon-gift.svg");
+    }
+  }
+}

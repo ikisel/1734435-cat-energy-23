@@ -1,0 +1,25 @@
+.button {
+  .button__data {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--basic-white);
+  }
+
+  .button__catalog {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: var(--special);
+  }
+}

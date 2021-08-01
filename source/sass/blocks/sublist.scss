@@ -1,0 +1,35 @@
+.sublist {
+  display: flex;
+  flex-direction: column;
+
+  &--extra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sublist__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sublist__title {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--special);
+
+    &--extra {
+      font-size: 14px;
+    }
+  }
+
+  .sublist__description {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--special);
+
+    &--extra {
+      font-size: 14px;
+    }
+  }
+}

@@ -7,4 +7,13 @@
   align-items: center;
   border-top: 1px solid var(--basic-medium-grey);
   border-bottom: 1px solid var(--basic-medium-grey);
+
+  @media (min-width: 768px) {
+    border: none;
+  }
+}
+
+.social__link {
+  display: block;
+  padding: 5px;
 }

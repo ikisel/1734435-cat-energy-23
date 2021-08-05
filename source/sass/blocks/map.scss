@@ -1,4 +1,22 @@
+.map {
+  @media (min-width: 1440px) {
+    position: relative;
+  }
+}
+
 .map__wrapper {
   display: block;
   border: none;
+
+  @media (min-width: 768px) {
+    background-image: url("../../img/location-medium.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: 1440px) {
+    background-image: url("../../img/locatiom-large.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

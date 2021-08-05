@@ -3,9 +3,18 @@
   padding: 0;
   list-style: none;
 
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
   .nav-list__item {
     text-align: center;
     border-top: 1px solid #e6e6e6;
+    margin-left: 30px;
+
+    @media (min-width: 768px) {
+      border: none;
+    }
   }
 
   .nav-list__link {
@@ -19,5 +28,11 @@
     text-decoration: none;
     padding-top: 22px;
     padding-bottom: 22px;
+
+    @media (min-width: 1440px) {
+      line-height: 30px;
+      color: var(--basic-white);
+      font-weight: 400;
+    }
   }
 }

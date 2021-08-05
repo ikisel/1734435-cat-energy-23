@@ -1,8 +1,32 @@
 .instruction__wrapper {
-  display: flex;
-  flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.instruction__icon-wrapper {
+  display: grid;
+  min-width: 60px;
+  min-height: 60px;
+  background-color: var(--basic-green);
+
+  @media (min-width: 768px) {
+    min-width: 80px;
+    min-height: 80px;
+  }
+}
+
+.instruction__icon {
+  place-self: center;
 }
 
 .instruction__title {
@@ -10,14 +34,69 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .instruction__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 37px;
+    counter-reset: medium;
+  }
+
+  @media (min-width: 1440px) {
+    justify-content: space-between;
+  }
+}
+
+.instruction__item {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 100px;
+    counter-increment: medium;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
 }
 
 .instruction__description {
+  padding: 5px 5px 5px 20px;
   color: var(--special);
+
+  @media (min-width: 768px) {
+    display: flex;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 245px;
+
+    &::after {
+      display: block;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      content: counter(medium);
+      color: var(--basic-grey);
+    }
+  }
 }

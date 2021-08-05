@@ -4,4 +4,14 @@
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    padding: 5px;
+  }
+}
+
+.copyright__text {
+  @media (min-width: 768px) {
+    padding-right: 22px;
+  }
 }

@@ -2,10 +2,26 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: var(--basic-grey);
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 57px 110px;
+  }
 }
 
 .page-footer__logo {
   text-align: center;
   padding-top: 39px;
   padding-bottom: 32px;
+
+  @media (min-width: 768px) {
+    padding: 5px;
+  }
 }

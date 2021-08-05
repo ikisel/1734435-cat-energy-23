@@ -1,3 +1,9 @@
+.difference {
+  @media (min-width: 768px) {
+    background-color: var(--basis-cool-grey);
+  }
+}
+
 .difference__image-before {
   display: block;
 }

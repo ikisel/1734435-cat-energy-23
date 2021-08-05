@@ -1,3 +1,23 @@
+.program {
+  @media (min-width: 1440px) {
+    width: 40%;
+    margin: 0;
+  }
+}
+
+.program__wrapper {
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    margin-left: 53px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+}
+
 .program__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -5,6 +25,16 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  @media (min-width: 1440px) {
+    text-align: center;
+  }
 }
 
 .program__image-slim {
@@ -12,7 +42,7 @@
   width: 50px;
   height: 53px;
   border-radius: 50%;
-  background-color: rgba(104, 186, 53, 1);
+  background-color: var(--basic-green);
 
   &::after {
     content: "";
@@ -25,14 +55,34 @@
 
 .program__description {
   color: var(--special);
-  padding-left: 22px;
+  padding-left: 20px;
   padding-right: 33px;
   padding-bottom: 23px;
+
+  @media (min-width: 768px) {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-left: 0;
+    color: var(--basic-black);
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 50px;
+  }
 }
 
 .program__link-wrapper {
   border-top: 1px solid var(--basic-medium-grey);
-  padding-top: 15px;
+
+  @media (min-width: 768px) {
+    border-top: none;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 50px;
+  }
 }
 
 .program__link {
@@ -44,7 +94,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--basic-black);
-  padding: 10px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   &::after {
     content: "";
@@ -52,5 +104,23 @@
     width: 32px;
     height: 10px;
     background-image: url("../../img/arrow.svg");
+    margin-left: 17px;
+    align-self: center;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 10px;
+      background-image: url("../../img/arrow.svg");
+      margin-left: 25px;
+      align-self: center;
+    }
   }
 }

@@ -1,4 +1,11 @@
-.page-header-nav__wrapper {
-  display: flex;
-  flex-direction: column;
+.page-header-nav {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  @media (min-width: 1440px) {
+    background-color: var(--basic-green);
+  }
 }

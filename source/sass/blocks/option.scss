@@ -3,6 +3,20 @@
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .option__item {

@@ -1,39 +1,46 @@
-.invitation__wrapper {
-  background-color: var(--basic-green);
-  background-image:
-    linear-gradient(
-    var(--basic-green-gradient),
-    var(--basic-green-gradient)),
-    url("../../img/background-cat.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+.invitation {
+  position: relative;
 
-  @media (min-width: 768px) {
-    background-color: var(--basic-white);
-    background-image: url("../../img/background-invitation-medium.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 709px 609px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 87px;
-  }
-
-  @media (min-width: 1440px) {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 302px;
     background-color: var(--basic-green);
     background-image:
       linear-gradient(
       var(--basic-green-gradient),
       var(--basic-green-gradient)),
-      url("../../img/background-cat-large.png");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 720px 694px;
-    background-position: top right;
-    margin: 0;
-    margin-bottom: 80px;
+      url("../../img/background-cat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: -1;
+
+    @media (min-width: 768px) {
+      content: initial;
+    }
+
+    @media (min-width: 1440px) {
+      content: "";
+      width: 50%;
+      height: 694px;
+      top: -122px;
+      left: 50%;
+    }
+  }
+}
+
+.invitation__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1440px) {
     padding-left: 110px;
     padding-right: 110px;
   }
@@ -123,8 +130,4 @@
 
 .invitation__image {
   display: block;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
 }

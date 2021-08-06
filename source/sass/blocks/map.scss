@@ -1,12 +1,10 @@
-.map {
-  @media (min-width: 1440px) {
-    position: relative;
-  }
+.map__iframe {
+  border: none;
+  width: 100%;
 }
 
 .map__wrapper {
   display: block;
-  border: none;
 
   @media (min-width: 768px) {
     background-image: url("../../img/location-medium.png");

@@ -34,4 +34,10 @@
     color: var(--basic-white);
     font-weight: 400;
   }
+
+  &--catalog {
+    @media (min-width: 1440px) {
+      color: var(--special-dark);
+    }
+  }
 }

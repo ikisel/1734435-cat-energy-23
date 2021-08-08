@@ -20,4 +20,10 @@
   padding-bottom: 10px;
   text-decoration: none;
   color: var(--special);
+
+  &--show {
+    @media (min-width: 768px) {
+      line-height: 0;
+    }
+  }
 }

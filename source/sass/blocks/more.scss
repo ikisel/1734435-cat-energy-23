@@ -1,17 +1,35 @@
 .more {
-  margin: 0;
   padding: 0;
   list-style: none;
 
-  .more__item {
-    margin-bottom: 12px;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .more__label {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
+  @media (min-width: 1440px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.more__item {
+  margin-bottom: 12px;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.more__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

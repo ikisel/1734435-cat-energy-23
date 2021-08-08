@@ -2,26 +2,48 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  .gift__aside {
-    background-image: url("../../img/background-gift.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  .gift__description {
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--basic-white);
-    padding: 30px;
-    text-align: center;
+  @media (min-width: 1440px) {
+    width: 25%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
-    &::before {
-      content: "";
-      display: block;
-      width: 78px;
-      height: 80px;
-      margin: 0 auto;
-      background-image: url("../../img/icon-gift.svg");
-    }
+.gift__aside {
+  background-image: url("../../img/background-gift.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.gift__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-white);
+  padding: 43px 10px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    margin: 48px auto;
+    background-image: url("../../img/icon-gift.svg");
   }
 }

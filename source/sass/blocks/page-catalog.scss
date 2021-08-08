@@ -3,6 +3,30 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 27px 20px 35px;
+  border-top: 1px solid var(--special-active-grey);
+  border-bottom: 1px solid var(--special-active-grey);
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.page-catalog__gift {
+  @media (min-width: 768px) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+  }
 }

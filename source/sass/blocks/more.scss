@@ -2,12 +2,12 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     display: flex;
     flex-wrap: wrap;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
@@ -16,7 +16,7 @@
 .more__item {
   margin-bottom: 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     width: 50%;
   }
 }
@@ -28,7 +28,7 @@
   font-weight: 400;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     font-size: 20px;
     line-height: 30px;
   }

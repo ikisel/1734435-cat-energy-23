@@ -22,7 +22,7 @@
   color: var(--special);
 
   &--show {
-    @media (min-width: 768px) {
+    @media (min-width: 748px) {
       line-height: 0;
     }
   }

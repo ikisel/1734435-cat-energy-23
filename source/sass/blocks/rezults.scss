@@ -1,5 +1,5 @@
 .rezults {
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -19,12 +19,12 @@
     flex-direction: row-reverse;
     border: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: 748px) {
       display: flex;
       flex-direction: column-reverse;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
       grid-column: 1 / 3;
       grid-row: 2 / 3;
       display: flex;
@@ -36,11 +36,11 @@
   &--weight {
     width: 39%;
 
-    @media (min-width: 768px) {
+    @media (min-width: 748px) {
       width: 21%;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
       width: 162px;
       grid-column: 1 / 2;
       grid-row: 1 / 2;
@@ -50,11 +50,11 @@
   &--time {
     width: 39%;
 
-    @media (min-width: 768px) {
+    @media (min-width: 748px) {
       width: 21%;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
       width: 162px;
       grid-column: 2 / 3;
       grid-row: 1 / 2;
@@ -70,7 +70,7 @@
   text-align: center;
   padding: 14px 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     font-size: 30px;
     line-height: 37px;
   }
@@ -83,14 +83,14 @@
     text-transform: uppercase;
     color: var(--basic-black);
 
-    @media (min-width: 768px) {
+    @media (min-width: 748px) {
       font-size: 20px;
       line-height: 20px;
       padding-right: 0;
       margin-left: auto;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
       margin-left: 0;
       padding-left: 0;
       align-self: center;
@@ -107,7 +107,7 @@
   text-align: center;
   padding: 5px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     font-size: 14px;
     line-height: 14px;
   }
@@ -121,14 +121,14 @@
     color: var(--basic-black);
     padding: 14px 20px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 748px) {
       font-size: 20px;
       line-height: 20px;
       margin-left: auto;
       padding-right: 0;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
       margin-left: 0;
       padding-left: 0;
       padding-right: 63px;

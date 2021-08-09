@@ -6,13 +6,13 @@
 .map__wrapper {
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     background-image: url("../../img/location-medium.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     background-image: url("../../img/locatiom-large.png");
     background-repeat: no-repeat;
     background-position: center;

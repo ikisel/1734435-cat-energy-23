@@ -6,27 +6,11 @@
 .page-main__section {
   margin-bottom: 22px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     margin-bottom: 40px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     margin-bottom: 80px;
-  }
-}
-
-.page-main__fieldset {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 10px;
-
-  @media (min-width: 768px) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (min-width: 1440px) {
-    padding-left: 110px;
-    padding-right: 110px;
   }
 }

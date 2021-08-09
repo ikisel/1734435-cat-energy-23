@@ -7,7 +7,7 @@
   border-top: 1px solid var(--special-active-grey);
   border-bottom: 1px solid var(--special-active-grey);
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     font-size: 60px;
     line-height: 60px;
     padding-left: 30px;
@@ -15,18 +15,18 @@
     border: none;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     padding-left: 110px;
     padding-right: 110px;
   }
 }
 
 .page-catalog__gift {
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     margin-bottom: 70px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     margin-bottom: 0;
   }
 }

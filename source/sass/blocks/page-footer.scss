@@ -3,7 +3,7 @@
   padding-right: 20px;
   background-color: var(--basic-grey);
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +11,7 @@
     padding-right: 30px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     padding: 57px 110px;
   }
 }
@@ -21,7 +21,7 @@
   padding-top: 39px;
   padding-bottom: 32px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     padding: 5px;
   }
 }

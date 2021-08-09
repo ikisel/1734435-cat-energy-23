@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding: 28px 20px 26px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -12,7 +12,7 @@
     background-color: var(--basic-grey);
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     width: 570px;
     height: auto;
     background-color: var(--basic-white);
@@ -28,7 +28,7 @@
   text-transform: uppercase;
   color: var(--special-dark);
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     width: 22%;
     font-size: 20px;
     line-height: 22px;
@@ -41,7 +41,7 @@
   width: 54%;
   color: var(--special);
 
-  @media (min-width: 768px) {
+  @media (min-width: 748px) {
     width: 22%;
     font-size: 16px;
     text-align: right;

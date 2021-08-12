@@ -104,24 +104,32 @@
   line-height: 18px;
   font-weight: 400;
   color: var(--basic-white);
-  padding: 14px 26px;
+  padding: 10px 26px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  background-color: var(--basic-green);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--special-medium-green);
+  }
+
+  &:active {
+    color: var(--special-white);
+  }
 
   @media (min-width: 748px) {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
+    padding: 14px 26px;
   }
 }
 
 .invitation__link-wrapper {
-  background-color: var(--basic-green);
-  padding-top: 5px;
-  padding-bottom: 5px;
-
   @media (min-width: 748px) {
     box-sizing: border-box;
     width: 244px;

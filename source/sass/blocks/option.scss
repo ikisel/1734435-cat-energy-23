@@ -10,16 +10,13 @@
   }
 
   @media (min-width: 1280px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-left: 110px;
-    padding-right: 110px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+    gap: 80px;
   }
 }
 
 .option__item {
-  background-color: rgba(242, 242, 242, 1);
+  background-color: var(--basic-grey);
   margin-bottom: 20px;
 }

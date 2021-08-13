@@ -1,13 +1,28 @@
 .difference {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: 748px) {
     background-color: var(--basis-cool-grey);
   }
 }
 
-.difference__image-before {
-  display: block;
+.difference__wrapper {
+  display: grid;
+  grid-template-columns: var(--curtain-position) calc(100% - var(--curtain-position));
 }
 
-.difference__image-after {
+.difference__state {
   display: block;
+  object-fit: cover;
+}
+
+.difference__state--before {
+  grid-column: 1 / 2;
+  object-position: left;
+}
+
+.difference__state--after {
+  grid-column: 2 / 3;
+  object-position: right;
 }

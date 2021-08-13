@@ -22,4 +22,6 @@
   --special-shadow-light: rgba(0, 0, 0, 0.19);
   --special-shadow-dark: rgba(0, 0, 0, 0.2);
   --special-error: #ff8282;
+  --curtain-value: 1;
+  --curtain-position: calc(100% * var(--curtain-value));
 }

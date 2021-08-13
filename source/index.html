@@ -152,17 +152,18 @@
             <div class="example__difference difference">
               <div class="difference__wrapper">
                 <div class="difference__state difference__state--before">
-                  <img src="img/cat-fat.png" width="311" height="232" alt="Кот с лишним весом">
+                  <img class="difference__image difference__image--before" src="img/cat_fat@1x.png" width="311" height="232" alt="Кот с лишним весом">
                 </div>
                 <div class="difference__state difference__state--after">
-                  <img src="img/cat-skinny.png" width="311" height="232" alt="Стройный кот">
+                  <img class="difference__image difference__image--after" src="img/cat_skinny@1x.png" width="311" height="232" alt="Стройный кот">
                 </div>
               </div>
               <div class="example__toggle toggle">
                 <button class="toggle__button toggle__button--before" type="button">Было</button>
                 <div class="example__range range">
                   <label class="page__a11y-hidden" for="scale">Шкала для просмотра изменения внешнего вида кота в зависимости от его веса</label>
-                  <input class="range__scale" type="range" id="scale" min="1" max="20" value="10" step="1">
+                  <input class="range__input" type="range" id="scale" min="1" max="20" value="10" step="1">
+                  <div class="range__scale"></div>
                 </div>
                 <button class="toggle__button toggle__button--after" type="button">Стало</button>
               </div>

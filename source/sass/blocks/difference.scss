@@ -1,6 +1,8 @@
 .difference {
   display: flex;
   flex-direction: column;
+  --curtain-value: 1;
+  --curtain-position: calc(100% * var(--curtain-value));
 
   @media (min-width: 748px) {
     background-color: var(--basis-cool-grey);
@@ -10,19 +12,55 @@
 .difference__wrapper {
   display: grid;
   grid-template-columns: var(--curtain-position) calc(100% - var(--curtain-position));
-}
+  width: 311px;
 
-.difference__state {
-  display: block;
-  object-fit: cover;
+  @media (min-width: 748px) {
+    width: 676px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 640px;
+  }
 }
 
 .difference__state--before {
   grid-column: 1 / 2;
-  object-position: left;
 }
 
 .difference__state--after {
   grid-column: 2 / 3;
+}
+
+.difference__image--before {
+  display: block;
+  width: 100%;
+  height: 232px;
+  margin: 0 auto;
+  object-position: left;
+  object-fit: cover;
+
+  @media (min-width: 748px) {
+    height: 520px;
+  }
+
+  @media (min-width: 1280px) {
+    height: 536px;
+  }
+}
+
+.difference__image--after {
+  display: block;
+  width: 100%;
+  height: 232px;
+  margin: 0 auto;
   object-position: right;
+  object-fit: cover;
+
+  @media (min-width: 748px) {
+    height: 520px;
+  }
+
+  @media (min-width: 1280px) {
+    height: 536px;
+  }
 }

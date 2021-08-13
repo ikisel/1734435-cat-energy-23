@@ -13,6 +13,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
     gap: 80px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 

@@ -1,0 +1,21 @@
+.range {
+  width: 84px;
+  height: 14px;
+  background-color: var(--basic-white);
+  border: 1px solid var(--special-grey);
+  border-radius: 7px;
+}
+
+.range__scale {
+  width: 50%;
+  height: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  border-radius: 8px;
+  background-color: var(--basic-green);
+}
+
+.range__input {
+  display: none;
+}

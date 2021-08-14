@@ -1,12 +1,12 @@
 .example__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: var(--basis-cool-grey);
+  background-color: var(--basic-cool-grey);
 
   @media (min-width: 748px) {
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: var(--basic-white);
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: 1280px) {
@@ -14,6 +14,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     padding-left: 110px;
+    padding-right: 110px;
+    background-color: var(--basic-grey);
   }
 }
 
@@ -23,10 +25,13 @@
   font-weight: 400;
   line-height: 40px;
 
+
   @media (min-width: 748px) {
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: 1280px) {
@@ -43,6 +48,8 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: 1280px) {
@@ -57,6 +64,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @media (min-width: 748px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @media (min-width: 1280px) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
@@ -68,6 +80,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 748px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .example__difference {

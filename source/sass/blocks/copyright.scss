@@ -4,14 +4,49 @@
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-
-  @media (min-width: 748px) {
-    padding: 5px;
-  }
 }
 
-.copyright__text {
-  @media (min-width: 748px) {
-    padding-right: 22px;
+.copyright__link {
+  display: block;
+
+  &--text {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--special);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--basic-green);
+      transition: color 0.2s ease;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (min-width: 748px) {
+      margin-right: 22px;
+    }
+  }
+
+  &--logo {
+    width: 27px;
+    height: 34px;
+    background: var(--special-dark-grey);
+    mask-image: url("../../img/copyright-logo-htmlacademy.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+
+    &:hover,
+    &:focus {
+      background: var(--basic-green);
+      transition: color 0.2s ease;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

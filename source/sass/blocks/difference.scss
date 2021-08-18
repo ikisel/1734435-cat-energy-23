@@ -5,11 +5,7 @@
   --curtain-position: calc(100% * var(--curtain-value));
 
   @media (min-width: 748px) {
-    background-color: var(--basic-cool-grey);
-  }
-
-  @media (min-width: 1280px) {
-    background-color: transparent;
+    --curtain-value: 0.5;
   }
 }
 
@@ -17,6 +13,7 @@
   display: grid;
   grid-template-columns: var(--curtain-position) calc(100% - var(--curtain-position));
   width: 311px;
+  align-self: center;
 
   @media (min-width: 748px) {
     width: 676px;
@@ -66,5 +63,6 @@
 
   @media (min-width: 1280px) {
     height: 536px;
+    background: linear-gradient(to top, var(--basic-cool-grey) 61%, transparent 61%);
   }
 }

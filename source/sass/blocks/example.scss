@@ -1,10 +1,14 @@
+.example {
+  position: relative;
+}
+
 .example__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: var(--basic-cool-grey);
+  background: linear-gradient(to top, var(--basic-cool-grey) 100%, transparent 100%);
 
   @media (min-width: 748px) {
-    background-color: transparent;
+    background: linear-gradient(to top, var(--basic-cool-grey) 45%, transparent 45%);
     padding-left: 0;
     padding-right: 0;
   }
@@ -15,7 +19,8 @@
     grid-template-rows: repeat(3, 1fr);
     padding-left: 110px;
     padding-right: 110px;
-    background-color: var(--basic-grey);
+    padding-bottom: 50px;
+    background: linear-gradient(to top, var(--basic-grey) 70%, transparent 70%);
   }
 }
 
@@ -56,6 +61,8 @@
     width: 70%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -67,6 +74,7 @@
   @media (min-width: 748px) {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: 1280px) {
@@ -76,14 +84,16 @@
 }
 
 .example__toggle {
-  margin-top: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   @media (min-width: 748px) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px 60px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 15px 30px 60px;
   }
 }
 

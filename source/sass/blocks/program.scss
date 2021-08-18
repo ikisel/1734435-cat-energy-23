@@ -6,29 +6,28 @@
       content: "";
       display: block;
       float: left;
-      width: 50px;
-      height: 50px;
+      width: 70px;
+      height: 70px;
       background-image:
         url("../../img/cat-slim.svg"),
-        radial-gradient(at center, var(--basic-green), var(--basic-green));
+        radial-gradient(at center, var(--basic-green) 50%, transparent 50%);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover, 100%;
-      border-radius: 50%;
+      background-size: cover;
       margin-right: 19px;
 
       @media (min-width: 748px) {
         clear: both;
         float: right;
-        width: 200px;
-        height: 200px;
+        width: 280px;
+        height: 280px;
       }
 
       @media (min-width: 1280px) {
         clear: both;
         float: left;
-        width: 100px;
-        height: 100px;
+        width: 140px;
+        height: 140px;
       }
     }
   }
@@ -40,29 +39,28 @@
       content: "";
       display: block;
       float: left;
-      width: 50px;
-      height: 50px;
+      width: 70px;
+      height: 70px;
       background-image:
         url("../../img/cat-pro.svg"),
-        radial-gradient(at center, var(--basic-green), var(--basic-green));
+        radial-gradient(at center, var(--basic-green) 50%, transparent 50%);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 100% 100%;
-      border-radius: 50%;
+      background-size: cover;
       margin-right: 11px;
 
       @media (min-width: 748px) {
         clear: both;
         float: right;
-        width: 200px;
-        height: 200px;
+        width: 280px;
+        height: 280px;
       }
 
       @media (min-width: 1280px) {
         clear: both;
         float: left;
-        width: 100px;
-        height: 100px;
+        width: 140px;
+        height: 140px;
       }
     }
   }

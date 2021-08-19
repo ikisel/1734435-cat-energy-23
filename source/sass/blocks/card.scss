@@ -102,6 +102,16 @@
 
   &--show {
     background-color: var(--basic-grey);
+
+    &:hover,
+    &:focus {
+      color: var(--special);
+      background-color: var(--special-active-grey);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: 748px) {

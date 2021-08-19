@@ -14,6 +14,9 @@
 }
 
 .more__item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-left: 10px;
   margin-bottom: 12px;
 
   @media (min-width: 748px) {
@@ -22,14 +25,74 @@
 }
 
 .more__label {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  padding-left: 50px;
 
   @media (min-width: 748px) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.more__input + label::before,
+.more__input:checked + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--special-grey);
+
+  @media (min-width: 748px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.more__input + label:hover::before,
+.more__input + label:focus::before,
+.more__input:checked + label:hover::before,
+.more__input:checked + label:focus::before {
+  border: 1px solid var(--basic-active-grey);
+}
+
+.more__input + label:active::before,
+.more__input:checked + label:active::before {
+  opacity: 0.3;
+}
+
+.more__input:checked + label::after,
+.more__input:checked + label:hover::after,
+.more__input:checked + label:focus::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 15px;
+  height: 7px;
+  border-radius: 1px;
+  border-left: 2px solid var(--basic-green);
+  border-bottom: 2px solid var(--basic-green);
+  transform: rotate(-45deg);
+
+  @media (min-width: 748px) {
+    top: 11px;
+    left: 11px;
+    width: 20px;
+    height: 10px;
+    border-radius: 1px;
+    border-left: 3px solid var(--basic-green);
+    border-bottom: 3px solid var(--basic-green);
+  }
+}
+
+.more__input:checked + label:active::after {
+  opacity: 0.3;
 }

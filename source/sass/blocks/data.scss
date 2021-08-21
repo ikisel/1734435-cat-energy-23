@@ -1,20 +1,17 @@
 .data__item {
   border-top: 1px solid var(--special-grey);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 
   @media (min-width: 748px) {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding: 26px 38px;
   }
 
   @media (min-width: 1280px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 5px 0;
   }
 }
 

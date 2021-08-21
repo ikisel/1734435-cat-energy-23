@@ -17,14 +17,14 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
   text-decoration: none;
   color: var(--special);
 
   &--show {
     @media (min-width: 748px) {
       line-height: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
 }

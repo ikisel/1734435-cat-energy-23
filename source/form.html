@@ -115,25 +115,27 @@
                   </fieldset>
               </div>
                 <fieldset class="form__fieldset form__fieldset--contacts">
-                  <legend class="form__title form__title--legend">Контактные данные (владельца кота)</legend>
-                  <div class="form__mail-phone">
+                  <legend class="form__contacts">Контактные данные (владельца кота)</legend>
+                  <div class="form__email-phone">
                     <div class="form__email">
                       <label class="form__label form__label--email" for="email">E-mail:*</label>
-                      <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                      <input class="form__input form__post" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                      <span class="form__icon-post"></span>
                     </div>
                     <div class="form__phone">
                       <label class="form__label form__label--phone" for="phone">Телефон:*</label>
-                      <input class="form__input form__input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                      <input class="form__input form__cell" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                      <span class="form__icon-cell"></span>
                     </div>
                   </div>
                 </fieldset>
                 <fieldset class="form__fieldset form__fieldset--comments">
-                  <legend class="form__title form__title--legend">Комментарий</legend>
+                  <legend class="form__legend">Комментарий</legend>
                   <label class="page__a11y-hidden" for="comment">Расскажите обо всех повадках кота</label>
                   <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </fieldset>
                 <fieldset class="form__fieldset form__fieldset--checkbox">
-                  <legend class="form__title form__title--legend">Дополнительно</legend>
+                  <legend class="form__legend">Дополнительно</legend>
                   <ul class="form__list more form__list--more">
                     <li class="more__item">
                       <input class="more__input page__a11y-hidden" type="checkbox" name="sweetener" id="sweetener" checked>

@@ -16,6 +16,9 @@
 }
 
 .gift__aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--basic-green);
   background-image:
     linear-gradient(
@@ -36,6 +39,8 @@
   }
 
   @media (min-width: 748px) {
+    flex-direction: row;
+    justify-content: space-around;
     background-color: var(--basic-green);
     background-image:
       linear-gradient(
@@ -54,6 +59,8 @@
   }
 
   @media (min-width: 1280px) {
+    flex-direction: column;
+    align-items: center;
     background-color: var(--basic-green);
     background-image:
       linear-gradient(
@@ -70,44 +77,27 @@
         url("../../img/background-gift-desktop@2x.png");
     }
   }
-}
-
-.gift__description {
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--basic-white);
-  margin: 0;
-  padding: 43px 10px;
-  text-align: center;
-
-  @media (min-width: 748px) {
-    display: flex;
-    align-items: center;
-  }
-
-  @media (min-width: 1280px) {
-    flex-direction: column;
-    margin: 0;
-  }
 
   &::before {
     content: "";
     display: block;
     width: 78px;
     height: 80px;
-    margin: 60px 101px 48px 101px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-image: url("../../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-
-    @media (min-width: 748px) {
-      margin: 57px 265px 60px 77px;
-    }
-
-    @media (min-width: 1280px) {
-      align-self: baseline;
-      margin: 55px auto 46px auto;
-    }
   }
+}
+
+.gift__description {
+  width: 161px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-white);
+  padding: 10px;
+  text-align: center;
 }

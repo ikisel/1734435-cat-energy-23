@@ -141,7 +141,44 @@
   text-align: center;
 
   &--more {
+    position: relative;
+    height: 35px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: 30px;
+      left: 170px;
+      background-color: var(--special-medium-grey);
+
+      @media (min-width: 748px) {
+        width: 60px;
+        top: 60px;
+        left: 130px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: 30px;
+      left: 170px;
+      background-color: var(--special-medium-grey);
+      transform: rotate(90deg);
+
+      @media (min-width: 748px) {
+        width: 60px;
+        top: 60px;
+        left: 130px;
+      }
+    }
+
     @media (min-width: 748px) {
+      height: 60px;
       margin-top: 50px;
       margin-bottom: 50px;
     }

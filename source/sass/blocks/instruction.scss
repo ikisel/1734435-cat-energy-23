@@ -63,9 +63,10 @@
     min-width: 60px;
     min-height: 60px;
     background-color: var(--basic-green);
-    background-image: url("../../img/icon-leaf.svg");
+    background-image: url("../../icons/leaf.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 30px 32px;
 
     @media (min-width: 748px) {
       top: 0;
@@ -83,9 +84,10 @@
     min-width: 60px;
     min-height: 60px;
     background-color: var(--basic-green);
-    background-image: url("../../img/icon-water.svg");
+    background-image: url("../../icons/water.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 29px 31px;
 
     @media (min-width: 748px) {
       top: 0;
@@ -103,9 +105,10 @@
     min-width: 60px;
     min-height: 60px;
     background-color: var(--basic-green);
-    background-image: url("../../img/icon-eat.svg");
+    background-image: url("../../icons/eat.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 25px 30px;
 
     @media (min-width: 748px) {
       top: 0;
@@ -123,9 +126,10 @@
     min-width: 60px;
     min-height: 60px;
     background-color: var(--basic-green);
-    background-image: url("../../img/icon-time.svg");
+    background-image: url("../../icons/time.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 32px 33px;
 
     @media (min-width: 748px) {
       top: 0;

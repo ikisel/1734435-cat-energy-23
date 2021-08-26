@@ -150,12 +150,16 @@
       width: 30px;
       height: 2px;
       top: 30px;
-      left: 170px;
+      left: 130px;
       background-color: var(--special-medium-grey);
 
       @media (min-width: 748px) {
         width: 60px;
         top: 60px;
+        left: 140px;
+      }
+
+      @media (min-width: 1280px) {
         left: 130px;
       }
     }
@@ -166,13 +170,17 @@
       width: 30px;
       height: 2px;
       top: 30px;
-      left: 170px;
+      left: 130px;
       background-color: var(--special-medium-grey);
       transform: rotate(90deg);
 
       @media (min-width: 748px) {
         width: 60px;
         top: 60px;
+        left: 140px;
+      }
+
+      @media (min-width: 1280px) {
         left: 130px;
       }
     }

@@ -279,6 +279,11 @@
   }
 }
 
+.form__input--error + .form__icon-post,
+.form__input--error + .form__icon-cell {
+  background-color: var(--special-error);
+}
+
 .form__post,
 .form__cell {
   position: relative;
@@ -308,10 +313,6 @@
   &:focus {
     background: var(--basic-green);
   }
-
-  &--error:focus + .form__icon-post {
-    background: var(--special-error);
-  }
 }
 
 .form__icon-cell {
@@ -339,10 +340,6 @@
 
   &:focus {
     background: var(--basic-green);
-  }
-
-  &--error + .form__icon-cell {
-    background: var(--special-error);
   }
 }
 

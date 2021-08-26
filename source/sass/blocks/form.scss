@@ -285,11 +285,10 @@
 }
 
 .form__icon-post {
-  position: absolute;
-  content: "";
   width: 20px;
   height: 14px;
   right: 35px;
+  margin-left: -37px;
   background: var(--special-warm-dark);
   mask-image: url("../../icons/email.svg");
   mask-repeat: no-repeat;
@@ -302,9 +301,6 @@
     right: 50px;
   }
 
-  @media (min-width: 1280px) {
-    left: 444px;
-  }
 
   &:hover {
     background: var(--special-warm-dark);
@@ -320,11 +316,10 @@
 }
 
 .form__icon-cell {
-  position: absolute;
-  content: "";
   width: 20px;
   height: 20px;
   right: 32px;
+  margin-left: -37px;
   background: var(--special-warm-dark);
   mask-image: url("../../icons/phone.svg");
   mask-repeat: no-repeat;

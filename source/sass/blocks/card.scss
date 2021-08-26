@@ -36,15 +36,29 @@
 }
 
 .card__thumb {
+  width: 84px;
+  height: 100px;
+
   @media (min-width: 748px) {
     width: 168px;
-    height: 200px;
-    margin-top: -70px;
+    height: 206px;
+    margin-top: -65px;
   }
 
   @media (min-width: 1280px) {
     width: 172px;
     height: 196px;
+  }
+
+  &--half {
+    width: 68px;
+    height: 86px;
+
+    @media (min-width: 748px) {
+      width: 161px;
+      height: 172px;
+      margin-top: -43px;
+    }
   }
 }
 

@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -48,6 +49,9 @@
             <p class="invitation__description">Занялся собой? Займись котом!</p>
             <div class="invitation__image-wrapper">
               <picture>
+                <source media="(min-width: 1280px)" srcset="img/invitation-desktop@1x.webp 1x, img/invitation-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 748px)" srcset="img/invitation-tablet@1x.webp 1x, img/invitation-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="img/invitation-mobile@1x.webp 1x, img/invitation-mobile@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1280px)" srcset="img/invitation-desktop@1x.png 1x, img/invitation-desktop@2x.png 2x">
                 <source media="(min-width: 748px)" srcset="img/invitation-tablet@1x.jpg 1x, img/invitation-tablet@2x.jpg 2x">
                 <img class="invitation__image" src="img/invitation-mobile@1x.png" srcset="img/invitation-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая упаковка корма в виде стакана 500 грамм с логотипом компании Cat Energy">
@@ -123,12 +127,16 @@
               <div class="difference__wrapper">
                 <div class="difference__state difference__state--before">
                   <picture>
+                    <source media="(min-width: 748px)" srcset="img/cat-fat@1x.webp 1x, img/cat-fat@2x.webp 2x" type="image/webp">
+                    <source srcset="img/cat-fat-mobile@1x.webp 1x, img/cat-fat-mobile@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 748px)" srcset="img/cat-fat@1x.png 1x, img/cat-fat@2x.png 2x">
                     <img class="difference__image difference__image--before" src="img/cat-fat-mobile@1x.png" srcset="img/cat-fat-mobile@2x.png 2x" width="311" height="232" alt="Кот с лишним весом">
                   </picture>
                 </div>
                 <div class="difference__state difference__state--after">
                   <picture>
+                    <source media="(min-width: 748px)" srcset="img/cat-skinny@1x.webp 1x, img/cat-skinny@2x.webp 2x" type="image/webp">
+                    <source srcset="img/cat-skinny-mobile@1x.webp 1x, img/cat-skinny-mobile@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 748px)" srcset="img/cat-skinny@1x.png 1x, img/cat-skinny@2x.png 2x">
                     <img class="difference__image difference__image--after" src="img/cat-skinny-mobile@1x.png" srcset="img/cat-skinny-mobile@2x.png 2x" width="311" height="232" alt="Стройный кот">
                   </picture>

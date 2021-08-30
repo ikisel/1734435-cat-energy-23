@@ -27,19 +27,19 @@
   line-height: 16px;
   color: var(--special);
 
-  &--extra {
-    font-size: 14px;
-  }
-
   @media (min-width: 748px) {
     font-size: 16px;
-    line-height: 20px;
-    margin-top: 9px;
-    margin-bottom: 9px;
+    line-height: 16px;
   }
 
-  @media (min-width: 1280px) {
-    line-height: 16px;
+  &--extra {
+    font-size: 14px;
+    line-height: 14px;
+
+    @media (min-width: 748px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -49,19 +49,22 @@
   line-height: 16px;
   color: var(--special);
 
-  &--extra {
-    font-size: 14px;
-  }
-
   @media (min-width: 748px) {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 16px;
     margin-top: 9px;
     margin-bottom: 9px;
     margin-left: 49px;
   }
 
-  @media (min-width: 1280px) {
-    line-height: 16px;
+  &--extra {
+    font-size: 14px;
+    line-height: 14px;
+
+    @media (min-width: 748px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0;
+    }
   }
 }

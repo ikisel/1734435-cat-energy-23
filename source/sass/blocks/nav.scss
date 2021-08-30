@@ -1,7 +1,4 @@
 .nav {
-  padding-top: 10px;
-  padding-bottom: 10px;
-
   @media (min-width: 748px) {
     display: block;
   }
@@ -33,7 +30,7 @@
 .nav--closed .nav__nav-toggle::before {
   content: "";
   position: absolute;
-  top: 24px;
+  top: 22px;
   right: 20px;
   width: 24px;
   height: 1.5px;
@@ -50,8 +47,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    right: 20px;
+    top: 25px;
+    right: 12px;
     width: 24px;
     height: 1.5px;
     background-color: var(--basic-black);

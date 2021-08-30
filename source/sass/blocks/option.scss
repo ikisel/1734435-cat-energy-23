@@ -7,11 +7,12 @@
   @media (min-width: 748px) {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: 1280px) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
     gap: 80px;
     padding-left: 110px;
     padding-right: 110px;
@@ -22,5 +23,25 @@
   background-color: var(--basic-grey);
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
+
+  @media (min-width: 748px) {
+    padding-left: 52px;
+    padding-right: 13px;
+    margin-bottom: 30px;
+  }
+
+  &--pro {
+    @media (min-width: 748px) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 1280px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    width: 570px;
+  }
 }

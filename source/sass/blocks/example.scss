@@ -70,6 +70,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 30px;
 
   @media (min-width: 748px) {
     padding-left: 30px;
@@ -87,6 +88,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 38px;
+  padding-bottom: 34px;
 
   @media (min-width: 748px) {
     padding: 10px 30px 60px;

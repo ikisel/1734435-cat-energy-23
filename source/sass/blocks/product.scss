@@ -1,24 +1,21 @@
 .product__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-
   @media (min-width: 748px) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-    gap: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 80px;
-  }
-
-  @media (min-width: 1280px) {
-    gap: 60px 80px;
-    padding-left: 110px;
-    padding-right: 110px;
+    gap: 60px 142px;
+    margin-top: 88px;
   }
 }
 
 .product__item {
   padding-bottom: 30px;
   margin-bottom: 30px;
+
+  @media (min-width: 748px) {
+    width: 324px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 245px;
+  }
 }

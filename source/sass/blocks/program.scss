@@ -9,18 +9,21 @@
       width: 70px;
       height: 70px;
       background:
-        url("../../icons/sprite.svg#slim"),
+        url("../../icons/sprite.svg#cat-slim"),
         radial-gradient(at center, var(--basic-green) 50%, transparent 50%);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      margin-right: 19px;
+      margin-top: 9px;
+      margin-left: -7px;
+      margin-right: 8px;
 
       @media (min-width: 748px) {
         clear: both;
         float: right;
         width: 280px;
         height: 280px;
+        margin-top: 52px;
       }
 
       @media (min-width: 1280px) {
@@ -42,18 +45,21 @@
       width: 70px;
       height: 70px;
       background:
-        url("../../icons/sprite.svg#pro"),
+        url("../../icons/sprite.svg#cat-pro"),
         radial-gradient(at center, var(--basic-green) 50%, transparent 50%);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      margin-right: 11px;
+      margin-top: 14px;
+      margin-left: -7px;
+      margin-right: 8px;
 
       @media (min-width: 748px) {
         clear: both;
         float: right;
         width: 280px;
         height: 280px;
+        margin-top: 50px;
       }
 
       @media (min-width: 1280px) {
@@ -72,10 +78,14 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 8px;
 
   @media (min-width: 748px) {
     font-size: 36px;
     line-height: 36px;
+    padding-top: 78px;
   }
 
   @media (min-width: 1280px) {
@@ -87,15 +97,19 @@
 
 .program__description {
   color: var(--special);
-  padding-bottom: 23px;
   border-bottom: 1px solid var(--basic-medium-grey);
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 23px;
 
   @media (min-width: 748px) {
+    width: 340px;
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     padding-left: 0;
+    padding-top: 17px;
     margin-left: 0;
     margin-right: 20px;
     color: var(--basic-black);
@@ -117,7 +131,7 @@
     left: 110px;
     width: 32px;
     height: 10px;
-    background-image: url("../../icons/arrow.svg");
+    background-image: url("../../icons/sprite.svg#arrow");
     background-repeat: no-repeat;
     transform: translateX(-25%);
     transition: transform 0.5s ease;
@@ -139,6 +153,10 @@
     }
   }
 
+  @media (min-width: 748px) {
+    margin-bottom: 38px;
+  }
+
   @media (min-width: 1280px) {
     margin-left: 52px;
   }
@@ -153,9 +171,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--basic-black);
-  padding-top: 15px;
+  padding-top: 19px;
   padding-bottom: 18px;
-  margin-right: 17px;
+  margin-right: 22px;
 
   &:active {
     opacity: 0.3;
@@ -165,5 +183,6 @@
   @media (min-width: 748px) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 28px;
   }
 }

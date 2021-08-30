@@ -1,6 +1,10 @@
 .invitation {
   position: relative;
 
+  @media (min-width: 1280px) {
+    position: static;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -40,6 +44,8 @@
         var(--basic-green-gradient),
         var(--basic-green-gradient)),
         url("../../img/background-desktop@1x.png");
+      background-size: contain;
+      background-position: left;
 
       @media (min-resolution: 2dppx) {
         background-image:
@@ -47,6 +53,8 @@
           var(--basic-green-gradient),
           var(--basic-green-gradient)),
           url("../../img/background-desktop@2x.png");
+        background-size: contain;
+        background-position: left;
       }
     }
   }
@@ -55,6 +63,7 @@
 .invitation__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 22px;
 
   @media (min-width: 748px) {
     display: grid;
@@ -62,6 +71,7 @@
     grid-template-rows: repeat(4, min-content);
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1280px) {
@@ -78,6 +88,8 @@
   font-weight: 400;
   color: var(--basic-white);
   text-align: center;
+  margin-top: 24px;
+  margin-bottom: 25px;
 
   @media (min-width: 748px) {
     grid-column: 1 / 2;
@@ -88,8 +100,9 @@
     font-weight: 400;
     color: var(--basic-black);
     text-align: left;
-    margin-bottom: 35px;
-    margin-left: 90px;
+    margin-top: 40px;
+    margin-bottom: 21px;
+    margin-left: 87px;
   }
 
   @media (min-width: 1280px) {
@@ -107,6 +120,7 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--basic-white);
+  margin-bottom: 29px;
 
   @media (min-width: 748px) {
     grid-column: 1 / 2;
@@ -118,7 +132,7 @@
     text-transform: uppercase;
     color: var(--basic-black);
     text-align: left;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     margin-left: 90px;
   }
 
@@ -136,7 +150,7 @@
   line-height: 18px;
   font-weight: 400;
   color: var(--basic-white);
-  padding: 10px 26px;
+  padding: 14px 26px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -203,6 +217,6 @@
   @media (min-width: 1280px) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
-    margin-right: 135px;
+    margin-right: 185px;
   }
 }

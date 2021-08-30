@@ -1,7 +1,8 @@
 .social__list {
   display: flex;
   margin: 0;
-  padding: 20px 0 21px;
+  padding-top: 20px;
+  padding-bottom: 14px;
   list-style: none;
   justify-content: center;
   align-items: center;
@@ -14,7 +15,7 @@
 }
 
 .social__item {
-  padding: 10px 20px;
+  padding: 5px;
 }
 
 .social__link {
@@ -34,10 +35,11 @@
     width: 23px;
     height: 16px;
     background: var(--special-dark-grey);
-    mask-image: url("../../icons/vk.svg");
+    mask-image: url("../../icons/sprite.svg#vk");
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: cover;
+    margin-right: 30px;
 
     @media (min-width: 748px) {
       width: 30px;
@@ -49,10 +51,11 @@
     width: 16px;
     height: 16px;
     background: var(--special-dark-grey);
-    mask-image: url("../../icons/instagram.svg");
+    mask-image: url("../../icons/sprite.svg#instagram");
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: cover;
+    margin-right: 30px;
 
     @media (min-width: 748px) {
       width: 23px;
@@ -64,10 +67,11 @@
     width: 10px;
     height: 18px;
     background: var(--special-dark-grey);
-    mask-image: url("../../icons/facebook.svg");
+    mask-image: url("../../icons/sprite.svg#facebook");
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: cover;
+    margin-right: 30px;
 
     @media (min-width: 748px) {
       width: 13px;

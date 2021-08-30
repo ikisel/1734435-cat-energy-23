@@ -1,7 +1,8 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 28px 20px 26px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: 748px) {
     padding-left: 30px;
@@ -23,10 +24,13 @@
   width: 50%;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--special-dark);
+  padding-top: 29px;
+  padding-bottom: 26px;
+  margin: 0;
 
   @media (min-width: 748px) {
     width: 22%;
@@ -40,6 +44,9 @@
   line-height: 20px;
   width: 54%;
   color: var(--special);
+  padding-top: 29px;
+  padding-bottom: 26px;
+  margin: 0;
 
   @media (min-width: 748px) {
     width: 22%;

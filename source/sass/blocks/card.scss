@@ -57,7 +57,7 @@
     @media (min-width: 748px) {
       width: 161px;
       height: 172px;
-      margin-top: -43px;
+      margin-top: -37px;
     }
   }
 }
@@ -71,16 +71,7 @@
   font-weight: 400;
   text-align: center;
   color: var(--special-warm-dark);
-
-  &--more {
-    color: var(--special-dark);
-    text-align: center;
-
-    @media (min-width: 1280px) {
-      font-size: 20px;
-      line-height: 22px;
-    }
-  }
+  text-transform: uppercase;
 
   @media (min-width: 748px) {
     font-size: 20px;
@@ -89,6 +80,20 @@
 
   @media (min-width: 1280px) {
     line-height: 21px;
+  }
+
+  &--more {
+    color: var(--special-dark);
+    text-align: center;
+
+    @media (min-width: 748px) {
+      padding-bottom: 23px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 20px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -102,6 +107,7 @@
   @media (min-width: 748px) {
     font-size: 16px;
     line-height: 18px;
+    margin-bottom: 60px;
   }
 }
 
@@ -118,6 +124,11 @@
   @media (min-width: 748px) {
     padding-left: 36px;
     padding-right: 36px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 35px;
+    padding-right: 30px;
   }
 }
 
@@ -147,6 +158,11 @@
     margin-left: 36px;
     margin-right: 36px;
   }
+
+  @media (min-width: 1280px) {
+    padding-left: 35px;
+    padding-right: 30px;
+  }
 }
 
 .card__product {
@@ -155,54 +171,32 @@
   text-align: center;
 
   &--more {
-    position: relative;
+    align-self: center;
     height: 35px;
+
+    @media (min-width: 748px) {
+      padding-top: 52px;
+      padding-bottom: 33px;
+    }
 
     &::before {
       content: "";
-      position: absolute;
+      display: block;
       width: 30px;
-      height: 2px;
-      top: 30px;
-      left: 130px;
-      background-color: var(--special-medium-grey);
+      height: 30px;
+      background-image: url("../../icons/sprite.svg#plus");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
 
       @media (min-width: 748px) {
         width: 60px;
-        top: 60px;
-        left: 140px;
-      }
-
-      @media (min-width: 1280px) {
-        left: 130px;
-      }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 2px;
-      top: 30px;
-      left: 130px;
-      background-color: var(--special-medium-grey);
-      transform: rotate(90deg);
-
-      @media (min-width: 748px) {
-        width: 60px;
-        top: 60px;
-        left: 140px;
-      }
-
-      @media (min-width: 1280px) {
-        left: 130px;
+        height: 60px;
       }
     }
 
     @media (min-width: 748px) {
       height: 60px;
-      margin-top: 50px;
-      margin-bottom: 50px;
     }
   }
 }

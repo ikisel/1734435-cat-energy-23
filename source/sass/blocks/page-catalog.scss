@@ -4,15 +4,31 @@
   font-weight: 400;
   line-height: 36px;
   padding: 27px 20px 35px;
+  margin-bottom: 49px;
   border-top: 1px solid var(--special-active-grey);
   border-bottom: 1px solid var(--special-active-grey);
 
   @media (min-width: 748px) {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 16px;
+    margin-bottom: 33px;
+    border: none;
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.page-catalog__product {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 748px) {
     padding-left: 30px;
     padding-right: 30px;
-    border: none;
   }
 
   @media (min-width: 1280px) {

@@ -30,6 +30,8 @@
   @media (min-width: 748px) {
     font-size: 16px;
     line-height: 16px;
+    margin-top: 9px;
+    margin-bottom: 9px;
   }
 
   &--extra {
@@ -65,6 +67,12 @@
       font-size: 16px;
       line-height: 20px;
       margin: 0;
+    }
+
+    @media (min-width: 1280px) {
+      margin-top: 9px;
+      margin-bottom: 9px;
+      margin-left: 49px;
     }
   }
 }

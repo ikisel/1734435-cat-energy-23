@@ -75,6 +75,10 @@
       min-width: 80px;
       min-height: 80px;
     }
+
+    @media (min-width: 1280px) {
+      top: 0;
+    }
   }
 
   &--water::before {
@@ -95,6 +99,10 @@
       top: 34px;
       min-width: 80px;
       min-height: 80px;
+    }
+
+    @media (min-width: 1280px) {
+      top: 0;
     }
   }
 

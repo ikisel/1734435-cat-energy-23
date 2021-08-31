@@ -30,6 +30,23 @@
 
 .difference__state--after {
   grid-column: 2 / 3;
+
+  @media (min-width: 1280px) {
+    position: relative;
+  }
+
+  &::after {
+    @media (min-width: 1280px) {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: 164px;
+      height: calc(100% - 164px);
+      z-index: -1;
+      background-color: var(--basic-cool-grey);
+      // box-shadow: 200px 200px 0 200px var(--basic-cool-grey);
+    }
+  }
 }
 
 .difference__image--before {
@@ -63,6 +80,5 @@
 
   @media (min-width: 1280px) {
     height: 536px;
-    background: linear-gradient(to top, var(--basic-cool-grey) 61%, transparent 61%);
   }
 }

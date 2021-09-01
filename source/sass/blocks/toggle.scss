@@ -10,7 +10,7 @@
   border: none;
   background: transparent;
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 29px;
     text-decoration-style: dotted;
@@ -22,7 +22,7 @@
 
   &:hover,
   &:focus {
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       text-decoration-style: solid;
       text-decoration-color: var(--special-shadow-medium);
       text-decoration-thickness: 1px;
@@ -37,7 +37,7 @@
   }
 
   &--before {
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       margin-right: 14px;
     }
 
@@ -47,7 +47,7 @@
   }
 
   &--after {
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       margin-left: 14px;
     }
 

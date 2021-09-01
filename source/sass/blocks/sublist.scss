@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     border-bottom: 1px solid var(--special-grey);
   }
 }
@@ -27,7 +27,7 @@
   line-height: 16px;
   color: var(--special);
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     font-size: 16px;
     line-height: 16px;
     margin-top: 9px;
@@ -38,7 +38,7 @@
     font-size: 14px;
     line-height: 14px;
 
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       font-size: 16px;
       line-height: 20px;
     }
@@ -51,7 +51,7 @@
   line-height: 16px;
   color: var(--special);
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     font-size: 16px;
     line-height: 16px;
     margin-top: 9px;
@@ -63,7 +63,7 @@
     font-size: 14px;
     line-height: 14px;
 
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       font-size: 16px;
       line-height: 20px;
       margin: 0;

@@ -3,8 +3,9 @@
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
+  pointer-events: initial;
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -32,7 +33,7 @@
   padding-bottom: 26px;
   margin: 0;
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     width: 22%;
     font-size: 20px;
     line-height: 22px;
@@ -48,7 +49,7 @@
   padding-bottom: 26px;
   margin: 0;
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     width: 22%;
     font-size: 16px;
     text-align: right;

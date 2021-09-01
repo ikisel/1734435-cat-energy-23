@@ -3,7 +3,7 @@
   padding-top: 13px;
   padding-bottom: 13px;
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     padding: 26px 38px;
   }
 
@@ -20,7 +20,7 @@
 }
 
 .data__wrapper {
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
   }
@@ -38,7 +38,7 @@
   text-transform: uppercase;
   color: var(--special-warm-dark);
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
   }

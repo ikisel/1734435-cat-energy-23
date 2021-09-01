@@ -1,8 +1,9 @@
 .partnership {
   @media (min-width: 1280px) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    z-index: 0;
   }
 }
 
@@ -12,13 +13,13 @@
     grid-row: 1 / 2;
     z-index: 2;
     align-self: center;
-    margin-left: 110px;
+    pointer-events: none;
   }
 }
 
 .partnership__map {
   @media (min-width: 1280px) {
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
 }

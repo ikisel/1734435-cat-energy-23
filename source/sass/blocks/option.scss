@@ -1,12 +1,23 @@
+.option {
+  // padding-left: 20px;
+  // padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
 .option__wrapper {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
 
-  @media (min-width: 748px) {
-    padding-left: 30px;
-    padding-right: 30px;
+  @media (min-width: 768px) {
     margin-bottom: 30px;
   }
 
@@ -14,8 +25,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
     gap: 80px;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 }
 
@@ -25,23 +34,17 @@
   padding-right: 20px;
   margin-bottom: 26px;
 
-  @media (min-width: 748px) {
-    padding-left: 52px;
-    padding-right: 13px;
+  @media (min-width: 768px) {
     margin-bottom: 30px;
   }
 
   &--pro {
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       margin-bottom: 0;
     }
 
     @media (min-width: 1280px) {
       margin-bottom: 30px;
     }
-  }
-
-  @media (min-width: 1280px) {
-    width: 570px;
   }
 }

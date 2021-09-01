@@ -9,7 +9,7 @@
   border-top: 1px solid var(--basic-medium-grey);
   border-bottom: 1px solid var(--basic-medium-grey);
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     border: none;
   }
 }
@@ -41,7 +41,7 @@
     mask-size: cover;
     margin-right: 30px;
 
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       width: 30px;
       height: 22px;
     }
@@ -57,7 +57,7 @@
     mask-size: cover;
     margin-right: 30px;
 
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       width: 23px;
       height: 23px;
     }
@@ -73,7 +73,7 @@
     mask-size: cover;
     margin-right: 30px;
 
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       width: 13px;
       height: 27px;
     }

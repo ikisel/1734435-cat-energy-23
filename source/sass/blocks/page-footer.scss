@@ -1,18 +1,18 @@
-.page-footer__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+.page-footer {
   background-color: var(--basic-grey);
+  z-index: 0;
+}
 
-  @media (min-width: 748px) {
+.page-footer__wrapper {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   @media (min-width: 1280px) {
-    padding: 57px 110px;
+    padding-top: 57px;
+    padding-bottom: 57px;
   }
 }
 
@@ -21,7 +21,7 @@
   padding-top: 39px;
   padding-bottom: 27px;
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     padding: 5px;
   }
 }

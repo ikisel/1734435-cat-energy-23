@@ -1,16 +1,24 @@
-.instruction__wrapper {
+.instruction {
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     padding-left: 30px;
     padding-right: 30px;
-    border-bottom: 1px solid var(--special-lightest-grey);
   }
 
   @media (min-width: 1280px) {
     padding-left: 110px;
     padding-right: 110px;
+  }
+}
+
+.instruction__wrapper {
+  @media (min-width: 768px) {
+    border-bottom: 1px solid var(--special-lightest-grey);
+  }
+
+  @media (min-width: 1280px) {
     border-bottom: none;
   }
 }
@@ -24,7 +32,7 @@
   padding-bottom: 38px;
   margin: 0;
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
     padding-top: 15px;
@@ -39,7 +47,7 @@
   padding: 0;
   margin-bottom: 20px;
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -70,7 +78,7 @@
     background-position: center;
     background-size: 30px 32px;
 
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       top: 34px;
       min-width: 80px;
       min-height: 80px;
@@ -95,7 +103,7 @@
     background-position: center;
     background-size: 29px 31px;
 
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       top: 34px;
       min-width: 80px;
       min-height: 80px;
@@ -121,7 +129,7 @@
     background-size: 25px 30px;
 
 
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       top: 0;
       min-width: 80px;
       min-height: 80px;
@@ -142,14 +150,14 @@
     background-position: center;
     background-size: 32px 33px;
 
-    @media (min-width: 748px) {
+    @media (min-width: 768px) {
       top: 0;
       min-width: 80px;
       min-height: 80px;
     }
   }
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     position: relative;
     max-width: 230px;
     max-height: 280px;
@@ -181,7 +189,7 @@
   margin-left: 60px;
   color: var(--special);
 
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;

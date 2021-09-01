@@ -1,9 +1,14 @@
 .product__wrapper {
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-    gap: 60px 142px;
+    gap: 142px 60px;
     margin-top: 88px;
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 142px 80px;
   }
 }
 
@@ -11,11 +16,11 @@
   padding-bottom: 30px;
   margin-bottom: 30px;
 
-  @media (min-width: 748px) {
-    width: 324px;
-  }
+  // @media (min-width: 768px) {
+  //   width: 324px;
+  // }
 
-  @media (min-width: 1280px) {
-    width: 245px;
-  }
+  // @media (min-width: 1280px) {
+  //   width: 245px;
+  // }
 }

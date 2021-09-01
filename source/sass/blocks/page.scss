@@ -22,7 +22,20 @@
 .page__container {
   margin: 0 auto;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1260px) {
     max-width: 1440px;
+  }
+}
+
+.page__leveler {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: 748px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1260px) {
+    width: 1440px;
   }
 }

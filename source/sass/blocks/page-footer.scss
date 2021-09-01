@@ -1,7 +1,10 @@
+.page-footer {
+  background-color: var(--basic-grey);
+}
+
 .page-footer__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: var(--basic-grey);
 
   @media (min-width: 748px) {
     display: flex;
@@ -12,7 +15,10 @@
   }
 
   @media (min-width: 1280px) {
-    padding: 57px 110px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 

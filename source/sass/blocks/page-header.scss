@@ -1,20 +1,14 @@
 .page-header__wrapper {
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @media (min-width: 748px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   @media (min-width: 1280px) {
     padding-top: 20px;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 }
 
@@ -88,5 +82,15 @@
   &--footer {
     width: 128px;
     height: 24px;
+  }
+}
+
+.page-header__nav {
+  @media (min-width: 748px) {
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-right: 110px;
   }
 }

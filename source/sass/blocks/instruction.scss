@@ -1,16 +1,24 @@
-.instruction__wrapper {
+.instruction {
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: 748px) {
     padding-left: 30px;
     padding-right: 30px;
-    border-bottom: 1px solid var(--special-lightest-grey);
   }
 
   @media (min-width: 1280px) {
     padding-left: 110px;
     padding-right: 110px;
+  }
+}
+
+.instruction__wrapper {
+  @media (min-width: 748px) {
+    border-bottom: 1px solid var(--special-lightest-grey);
+  }
+
+  @media (min-width: 1280px) {
     border-bottom: none;
   }
 }

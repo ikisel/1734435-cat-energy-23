@@ -3,6 +3,7 @@
   flex-direction: column;
   --curtain-value: 1;
   --curtain-position: calc(100% * var(--curtain-value));
+  z-index: 0;
 
   @media (min-width: 748px) {
     --curtain-value: 0.5;
@@ -44,7 +45,7 @@
       height: calc(100% - 164px);
       z-index: -1;
       background-color: var(--basic-cool-grey);
-      // box-shadow: 200px 200px 0 200px var(--basic-cool-grey);
+      box-shadow: 200px 200px 0 200px var(--basic-cool-grey);
     }
   }
 }

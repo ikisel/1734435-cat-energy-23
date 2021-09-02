@@ -32,13 +32,15 @@
   background-color: var(--basic-grey);
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   @media (min-width: 768px) {
     margin-bottom: 30px;
   }
 
   &--pro {
+    margin-bottom: 27px;
+
     @media (min-width: 768px) {
       margin-bottom: 0;
     }

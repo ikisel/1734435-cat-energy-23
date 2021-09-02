@@ -16,7 +16,6 @@
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
-  padding-bottom: 17px;
 
   @media (min-width: 768px) {
     padding-top: 24px;
@@ -42,7 +41,9 @@
 
 .page-header__logo-title-link {
   display: block;
-  align-self: flex-end;
+  align-self: center;
+  padding-top: 11px;
+  padding-bottom: 5px;
   margin-right: 90px;
 
   &:hover,
@@ -66,7 +67,6 @@
 .page-header__logo-title-thumb {
   width: 101px;
   height: 18px;
-  padding-top: 5px;
   margin-right: auto;
 
   @media (min-width: 768px) {

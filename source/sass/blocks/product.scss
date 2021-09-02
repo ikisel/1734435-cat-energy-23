@@ -13,14 +13,18 @@
 }
 
 .product__item {
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 30px;
   margin-bottom: 30px;
 
-  // @media (min-width: 768px) {
-  //   width: 324px;
-  // }
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-  // @media (min-width: 1280px) {
-  //   width: 245px;
-  // }
+  @media (min-width: 1280px) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }

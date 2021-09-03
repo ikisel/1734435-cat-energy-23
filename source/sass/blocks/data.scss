@@ -1,10 +1,12 @@
 .data__item {
   border-top: 1px solid var(--special-grey);
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 20px;
+  margin-bottom: -3px;
 
   @media (min-width: 768px) {
-    padding: 26px 38px;
+    border-left: 1px solid var(--special-grey);
+    border-right: 1px solid var(--special-grey);
+    padding: 26px 38px 28px;
   }
 
   @media (min-width: 1280px) {
@@ -23,6 +25,7 @@
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
   }
 
   @media (min-width: 1280px) {
@@ -37,10 +40,21 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--special-warm-dark);
+  margin-bottom: 10px;
+  margin-top: 10px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+  }
+}
+
+.data__sublist {
+  padding-bottom: 3px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 0;
   }
 }
 

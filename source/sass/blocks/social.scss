@@ -2,7 +2,7 @@
   display: flex;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 23px;
   padding-bottom: 21px;
   list-style: none;
   justify-content: center;
@@ -12,6 +12,8 @@
 
   @media (min-width: 768px) {
     border: none;
+    padding-top: 39px;
+    padding-bottom: 61px;
   }
 }
 
@@ -57,6 +59,8 @@
     @media (min-width: 768px) {
       width: 23px;
       height: 23px;
+      margin-left: 27px;
+      margin-right: 21px;
     }
   }
 

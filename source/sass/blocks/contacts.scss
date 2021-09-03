@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   pointer-events: initial;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: 768px) {
     padding-left: 30px;
@@ -34,8 +36,16 @@
   @media (min-width: 768px) {
     width: 22%;
     font-size: 20px;
-    line-height: 22px;
-    padding: 20px 41px;
+    line-height: 21px;
+    padding: 65px 20px 61px 41px;
+  }
+
+  &--catalog {
+    line-height: 18px;
+
+    @media (min-width: 768px) {
+      line-height: 22px;
+    }
   }
 }
 
@@ -51,6 +61,13 @@
     width: 22%;
     font-size: 16px;
     text-align: right;
-    padding: 20px 41px;
+    padding: 65px 42px 61px 20px;
+  }
+}
+
+.contacts__city {
+  @media (min-width: 768px) {
+    display: block;
+    margin-top: 19px;
   }
 }

@@ -19,14 +19,6 @@
   transform: scale(0);
 }
 
-.page__container {
-  margin: 0 auto;
-
-  @media (min-width: 1260px) {
-    max-width: 1440px;
-  }
-}
-
 .page__leveler {
   margin: 0 auto;
   width: 280px;

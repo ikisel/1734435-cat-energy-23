@@ -2,8 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 22px;
   padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 71px;
+  }
 }
 
 .copyright__link {

@@ -1,22 +1,8 @@
-.instruction {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: 768px) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (min-width: 1280px) {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
-}
-
 .instruction__wrapper {
   margin-bottom: 22px;
 
   @media (min-width: 768px) {
+    margin-bottom: 0;
     border-bottom: 1px solid var(--special-lightest-grey);
   }
 
@@ -30,14 +16,14 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 40px;
+  padding: 10px 0;
+  margin: -10px 0 28px;
 
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
     padding-top: 15px;
+    margin: -1px 0 40px;
   }
 }
 
@@ -49,10 +35,12 @@
   padding: 0;
 
   @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 41px 60px;
     counter-reset: medium;
+    margin-bottom: 42px;
   }
 
   @media (min-width: 1280px) {
@@ -80,7 +68,7 @@
     background-size: 30px 32px;
 
     @media (min-width: 768px) {
-      top: 34px;
+      top: 23px;
       min-width: 80px;
       min-height: 80px;
     }
@@ -105,7 +93,7 @@
     background-size: 29px 31px;
 
     @media (min-width: 768px) {
-      top: 34px;
+      top: 23px;
       min-width: 80px;
       min-height: 80px;
     }
@@ -131,7 +119,7 @@
 
 
     @media (min-width: 768px) {
-      top: 0;
+      top: 19px;
       min-width: 80px;
       min-height: 80px;
     }
@@ -152,7 +140,7 @@
     background-size: 32px 33px;
 
     @media (min-width: 768px) {
-      top: 0;
+      top: 19px;
       min-width: 80px;
       min-height: 80px;
     }
@@ -160,20 +148,12 @@
 
   @media (min-width: 768px) {
     position: relative;
-    max-width: 230px;
-    max-height: 280px;
     counter-increment: medium;
-    margin-right: 100px;
-    margin-bottom: 75px;
-
-    @media (min-width: 1280px) {
-      margin-right: 0;
-    }
 
     &::after {
       position: absolute;
-      top: -30px;
-      left: 100px;
+      top: -14px;
+      left: 115px;
       display: block;
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;
@@ -195,14 +175,9 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
-    padding-left: 0;
-    padding-right: 15px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    margin-top: 117px;
-    margin-left: 0;
-    margin-bottom: 37px;
     align-self: end;
+    padding: 10px 0;
+    margin: 125px 20px 54px 0;
     z-index: 10;
   }
 }

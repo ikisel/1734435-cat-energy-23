@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: row-reverse;
     border: none;
-    margin: 37px auto 22px;
+    margin: 20px auto;
 
     @media (min-width: 768px) {
       display: flex;
@@ -32,10 +32,10 @@
   }
 
   &--weight {
-    width: 42%;
+    width: 44%;
 
     @media (min-width: 768px) {
-      width: 21%;
+      width: 23%;
     }
 
     @media (min-width: 1280px) {
@@ -46,10 +46,11 @@
   }
 
   &--time {
-    width: 42%;
+    width: 44%;
 
     @media (min-width: 768px) {
-      width: 21%;
+      margin-right: 129px;
+      width: 23%;
     }
 
     @media (min-width: 1280px) {
@@ -67,7 +68,7 @@
   line-height: 24px;
   font-weight: 400;
   text-align: center;
-  padding: 10px 20px 14px 20px;
+  padding: 16px 20px 14px 19px;
   border: 1px solid var(--special-grey);
   border-radius: 3px;
   text-transform: uppercase;
@@ -75,6 +76,7 @@
   @media (min-width: 768px) {
     font-size: 30px;
     line-height: 37px;
+    padding: 14px 20px 19px 20px;
   }
 
   &--total {
@@ -85,13 +87,14 @@
     text-transform: uppercase;
     color: var(--basic-black);
     border: none;
-    padding: 0;
+    padding: 5px 0 5px 0;
+    margin: 9px 0 8px 0;
 
     @media (min-width: 768px) {
       font-size: 20px;
       line-height: 20px;
       margin-left: auto;
-      padding: 0;
+      padding: 0 0 10px 0;
     }
 
     @media (min-width: 1280px) {
@@ -122,13 +125,14 @@
     line-height: 20px;
     text-transform: uppercase;
     color: var(--basic-black);
-    padding: 0 5px 0 0;
+    padding: 5px 0 5px 0;
+    margin: 9px 0 8px 0;
 
     @media (min-width: 768px) {
       font-size: 20px;
       line-height: 20px;
       margin-left: auto;
-      padding: 0 0 9px 0;
+      padding: 0 0 10px 0;
     }
 
     @media (min-width: 1280px) {
@@ -140,12 +144,13 @@
   &--weight {
     position: absolute;
     width: 82px;
-    padding: 0 18px;
-    margin-top: -5px;
+    padding: 0 19px;
+    margin-top: -9px;
 
     @media (min-width: 768px) {
       width: 107px;
-      padding: 0 22px;
+      padding: 0 27px;
+      margin-top: -8px;
     }
 
     @media (min-width: 1280px) {
@@ -178,12 +183,13 @@
   &--time {
     position: absolute;
     width: 87px;
-    padding: 0 15px;
-    margin-top: -5px;
+    padding: 0 17px;
+    margin-top: -8px;
 
     @media (min-width: 768px) {
       width: 130px;
-      padding: 0 7px;
+      padding: 0 17px;
+      margin-top: -8px;
     }
 
     @media (min-width: 1280px) {

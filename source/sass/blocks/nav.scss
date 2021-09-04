@@ -70,3 +70,15 @@
     display: block;
   }
 }
+
+.nav--opened .nav-list,
+.nav--nojs .nav-list {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 198px;
+  top: 65px;
+  left: 0;
+  background-color: var(--basic-white);
+  z-index: 100;
+}

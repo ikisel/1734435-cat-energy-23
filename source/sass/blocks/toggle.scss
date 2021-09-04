@@ -1,7 +1,7 @@
 .toggle__button {
   box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 13px;
+  padding-right: 8px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -38,7 +38,7 @@
 
   &--before {
     @media (min-width: 768px) {
-      margin-right: 14px;
+      margin-right: 9px;
     }
 
     @media (min-width: 1280px) {

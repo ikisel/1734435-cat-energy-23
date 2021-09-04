@@ -2,13 +2,6 @@
   display: flex;
   justify-content: space-between;
   pointer-events: initial;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: 768px) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
 
   &--catalog {
     background-color: var(--basic-grey);
@@ -36,8 +29,8 @@
   @media (min-width: 768px) {
     width: 22%;
     font-size: 20px;
-    line-height: 21px;
-    padding: 65px 20px 61px 41px;
+    line-height: 24px;
+    padding: 66px 20px 51px 41px;
   }
 
   &--catalog {
@@ -53,8 +46,7 @@
   line-height: 20px;
   width: 54%;
   color: var(--special);
-  padding-top: 29px;
-  padding-bottom: 26px;
+  padding: 29px 0 26px 12px;
   margin: 0;
 
   @media (min-width: 768px) {
@@ -70,4 +62,8 @@
     display: block;
     margin-top: 19px;
   }
+}
+
+.contacts__accent {
+  display: block;
 }

@@ -61,7 +61,7 @@
 }
 
 .invitation__wrapper {
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   @media (min-width: 768px) {
     display: grid;
@@ -97,7 +97,7 @@
     text-align: left;
     margin-top: 40px;
     margin-bottom: 21px;
-    margin-left: 116px;
+    margin-left: 87px;
   }
 
   @media (min-width: 1280px) {
@@ -127,8 +127,8 @@
     text-transform: uppercase;
     color: var(--basic-black);
     text-align: left;
-    margin-bottom: 20px;
-    margin-left: 116px;
+    margin-bottom: 19px;
+    margin-left: 87px;
   }
 
   @media (min-width: 1280px) {
@@ -146,7 +146,8 @@
   font-weight: 400;
   color: var(--basic-white);
   padding-top: 12px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
+  margin-top: 3px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -181,8 +182,9 @@
     grid-row: 3 / 4;
     box-sizing: border-box;
     width: 244px;
-    margin-top: 30px;
-    margin-left: 120px;
+    margin-top: 25px;
+    margin-left: 90px;
+    padding: 1px 0 1px;
   }
 
   @media (min-width: 1280px) {
@@ -192,7 +194,6 @@
 
 .invitation__image {
   display: block;
-  margin: 0 auto;
   width: 280px;
   height: 270px;
 

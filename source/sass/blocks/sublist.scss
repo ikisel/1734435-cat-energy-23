@@ -12,7 +12,6 @@
 
     @media (min-width: 1280px) {
       width: 50%;
-      margin-right: 38px;
     }
   }
 }
@@ -38,6 +37,10 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: 1280px) {
+    align-self: center;
   }
 
   &--extra {
@@ -73,9 +76,7 @@
     }
 
     @media (min-width: 1280px) {
-      margin-top: 9px;
-      margin-bottom: 9px;
-      margin-left: 49px;
+      margin-right: 50px;
     }
   }
 }

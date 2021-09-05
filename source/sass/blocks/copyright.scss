@@ -6,8 +6,11 @@
   padding-bottom: 20px;
 
   @media (min-width: 768px) {
-    padding-top: 50px;
-    padding-bottom: 71px;
+    padding: 10px 0 12px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 34px 0 32px;
   }
 }
 

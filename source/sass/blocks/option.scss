@@ -22,6 +22,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
     gap: 80px;
+    margin-top: 136px;
+    margin-bottom: 6px;
   }
 }
 
@@ -37,6 +39,10 @@
     margin-bottom: 30px;
   }
 
+  @media (min-width: 1280px) {
+    margin-bottom: 51px;
+  }
+
   &--pro {
     margin-bottom: 27px;
 
@@ -45,7 +51,7 @@
     }
 
     @media (min-width: 1280px) {
-      margin-bottom: 30px;
+      margin-bottom: 51px;
     }
   }
 }

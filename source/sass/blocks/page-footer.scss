@@ -8,11 +8,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 22px 0 32px;
   }
 
   @media (min-width: 1280px) {
-    padding-top: 57px;
-    padding-bottom: 57px;
+    padding: 24px 0 29px;
   }
 }
 
@@ -22,7 +22,7 @@
   margin: 24px 0 17px;
 
   @media (min-width: 768px) {
-    padding-top: 50px;
-    padding-bottom: 66px;
+    padding: 10px 0;
+    margin: 24px 0 17px;
   }
 }

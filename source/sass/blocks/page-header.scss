@@ -60,6 +60,10 @@
     padding-top: 3px;
     margin-right: 0;
   }
+
+  @media (min-width: 1280px) {
+    padding-top: 1px;
+  }
 }
 
 .page-header__logo-thumb-link {

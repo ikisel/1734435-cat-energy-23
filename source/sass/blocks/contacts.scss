@@ -3,13 +3,10 @@
   justify-content: space-between;
   pointer-events: initial;
 
-  &--catalog {
-    background-color: var(--basic-grey);
-  }
-
   @media (min-width: 1280px) {
     width: 570px;
-    height: auto;
+    height: 201px;
+    align-items: center;
     background-color: var(--basic-white);
   }
 }
@@ -33,6 +30,13 @@
     padding: 66px 20px 51px 41px;
   }
 
+  @media (min-width: 1280px) {
+    width: 29%;
+    padding: 5px 0;
+    margin-left: 76px;
+    margin-right: 74px;
+  }
+
   &--catalog {
     line-height: 18px;
 
@@ -54,6 +58,12 @@
     font-size: 16px;
     text-align: right;
     padding: 65px 42px 61px 20px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 29%;
+    padding: 5px 0;
+    margin-right: auto;
   }
 }
 

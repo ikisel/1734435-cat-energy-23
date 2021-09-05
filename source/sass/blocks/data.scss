@@ -10,10 +10,11 @@
   }
 
   @media (min-width: 1280px) {
+    width: 896px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 16px 0;
   }
 }
 
@@ -30,6 +31,7 @@
 
   @media (min-width: 1280px) {
     flex-grow: 1;
+    margin-bottom: 0;
   }
 }
 
@@ -47,6 +49,10 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0;
+  }
+
+  @media (min-width: 1280px) {
+    align-self: center;
   }
 }
 

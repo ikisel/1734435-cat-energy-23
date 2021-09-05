@@ -49,6 +49,7 @@
   @media (min-width: 1280px) {
     width: 172px;
     height: 196px;
+    margin-top: -75px;
   }
 
   &--half {
@@ -59,6 +60,10 @@
       width: 161px;
       height: 172px;
       margin-top: -44px;
+    }
+
+    @media (min-width: 1280px) {
+      margin-top: -52px;
     }
   }
 }
@@ -88,7 +93,7 @@
   @media (min-width: 1280px) {
     width: 145px;
     line-height: 21px;
-    margin: 21px auto;
+    padding-top: 40px;
   }
 
   &--more {
@@ -105,12 +110,18 @@
     @media (min-width: 1280px) {
       font-size: 20px;
       line-height: 22px;
+      padding-top: 22px;
+      margin-bottom: 9px;
     }
   }
 
   &--half {
     @media (min-width: 768px) {
       padding-top: 31px;
+    }
+
+    @media (min-width: 1280px) {
+      padding-top: 40px;
     }
   }
 }
@@ -141,6 +152,10 @@
       padding-bottom: 5px;
       margin: 0 auto 77px;
     }
+
+    @media (min-width: 1280px) {
+      margin: 0 auto 80px;
+    }
   }
 }
 
@@ -149,8 +164,8 @@
   grid-row: 2/3;
 
   @media (min-width: 768px) {
-    margin-left: 3px;
-    margin-right: 3px;
+    margin-left: 35px;
+    margin-right: 35px;
   }
 }
 
@@ -163,9 +178,7 @@
   }
 
   @media (min-width: 1280px) {
-    padding-left: 35px;
-    padding-right: 30px;
-    padding-bottom: 17px;
+    margin-bottom: 21px;
   }
 
   &--more {
@@ -180,6 +193,11 @@
   background-color: var(--basic-green);
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media (min-width: 768px) {
+    margin-left: 39px;
+    margin-right: 37px;
+  }
 
   &--show {
     background-color: var(--basic-grey);
@@ -199,16 +217,6 @@
       padding-top: 3px;
       padding-bottom: 3px;
     }
-  }
-
-  @media (min-width: 768px) {
-    margin-left: 9px;
-    margin-right: 7px;
-  }
-
-  @media (min-width: 1280px) {
-    padding-left: 35px;
-    padding-right: 30px;
   }
 }
 

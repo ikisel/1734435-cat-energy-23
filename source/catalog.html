@@ -44,7 +44,7 @@
       <h1 class="page-catalog__title page__leveler">Каталог продукции</h1>
       <section class="product">
         <h2 class="page__a11y-hidden">Основной ассортимент</h2>
-        <div class="product__wrapper">
+        <div class="product__wrapper page__leveler">
           <article id="pro" class="product__item card">
             <div class="card__image">
               <picture>
@@ -346,8 +346,8 @@
       </section>
       <section class="partnership">
         <h2 class="page__a11y-hidden">Приглашение к сотрудничеству</h2>
-        <section class="partnership__contacts contacts">
-          <div class="contacts__wrapper contacts__wrapper--catalog">
+        <section class="partnership__contacts contacts partnership__contacts--catalog">
+          <div class="contacts__wrapper page__leveler">
             <h3 class="page__a11y-hidden">Адрес компании Cat Energy</h3>
             <p class="contacts__text contacts__text--catalog">приглашаем <span class="contacts__accent">к сотрудничеству</span> дилеров!</p>
             <p class="contacts__location contacts__location--catalog">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
@@ -356,9 +356,11 @@
         <section class="partnership__map map" id="map">
           <h3 class="page__a11y-hidden">Местоположение на карте</h3>
           <div class="map__wrapper">
-            <noscript>
-              <img src="img/location.jpg" width="320" height="362" alt="Местонахождение на карте">
-            </noscript>
+            <div class="page__leveler">
+              <noscript>
+                <img src="img/location.jpg" width="320" height="362" alt="Местонахождение на карте">
+              </noscript>
+            </div>
             <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056745!2d30.320853351734574!3d59.93871916896517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1628167171481!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </section>

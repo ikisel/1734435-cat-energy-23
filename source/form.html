@@ -41,13 +41,13 @@
       </div>
     </header>
     <main class="page-main page-form">
-      <section class="page-form__form form page__leveler">
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <section class="page-form__form form">
+        <h1 class="form__title page__leveler">Подбор программы</h1>
+        <p class="form__description page__leveler">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__wrapper">
             <div class="form__name-option">
-              <fieldset class="form__fieldset form__fieldset--name">
+              <fieldset class="form__fieldset form__fieldset--name page__leveler">
                 <legend class="page__a11y-hidden">Введите данные вашего кота</legend>
                 <div class="form__field">
                   <label class="form__label" for="name">Имя:*</label>
@@ -64,7 +64,7 @@
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--option">
                 <legend class="page__a11y-hidden">Выберите программу</legend>
-                <ul class="form__list select form__list--select">
+                <ul class="form__list select form__list--select page__leveler">
                   <li class="select__item">
                     <input class="select__input page__a11y-hidden" type="radio" name="select" value="slim" id="select" checked>
                     <label class="select__label" for="select">Похудение</label>
@@ -80,7 +80,7 @@
                 </ul>
               </fieldset>
             </div>
-            <fieldset class="form__fieldset form__fieldset--contacts">
+            <fieldset class="form__fieldset form__fieldset--contacts page__leveler">
               <legend class="form__legend">Контактные данные (владельца кота)</legend>
               <div class="form__email-phone">
                 <div class="form__email">
@@ -95,12 +95,12 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="form__fieldset form__fieldset--comments">
+            <fieldset class="form__fieldset form__fieldset--comments page__leveler">
               <legend class="form__legend">Комментарий</legend>
               <label class="page__a11y-hidden" for="comment">Расскажите обо всех повадках кота</label>
               <textarea class="form__textarea form__input" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="form__fieldset form__fieldset--checkbox">
+            <fieldset class="form__fieldset form__fieldset--checkbox page__leveler">
               <legend class="form__legend">Дополнительно</legend>
               <ul class="form__list more form__list--more">
                 <li class="more__item">
@@ -121,7 +121,7 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="form__button-wrapper">
+            <div class="form__button-wrapper page__leveler">
               <button class="form__button button" type="button">Отправить заявку</button>
               <p class="form__notice">* — Обязательные поля</p>
             </div>
@@ -130,8 +130,8 @@
       </section>
       <section class="partnership">
         <h2 class="page__a11y-hidden">Приглашение к сотрудничеству</h2>
-        <section class="partnership__contacts contacts page__leveler">
-          <div class="contacts__wrapper contacts__wrapper--catalog">
+        <section class="partnership__contacts contacts partnership__contacts--catalog">
+          <div class="contacts__wrapper page__leveler">
             <h3 class="page__a11y-hidden">Адрес компании Cat Energy</h3>
             <p class="contacts__text contacts__text--catalog">приглашаем <span class="contacts__accent">к сотрудничеству</span> дилеров!</p>
             <p class="contacts__location contacts__location--catalog">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
@@ -140,9 +140,11 @@
         <section class="partnership__map map" id="map">
           <h3 class="page__a11y-hidden">Местоположение на карте</h3>
           <div class="map__wrapper">
-            <noscript>
-              <img src="img/location.jpg" width="320" height="362" alt="Местонахождение на карте">
-            </noscript>
+            <div class="page__leveler">
+              <noscript>
+                <img src="img/location.jpg" width="320" height="362" alt="Местонахождение на карте">
+              </noscript>
+            </div>
             <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056745!2d30.320853351734574!3d59.93871916896517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1628167171481!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </section>

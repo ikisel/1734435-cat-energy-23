@@ -1,5 +1,6 @@
 .partnership {
   @media (min-width: 1280px) {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -18,6 +19,10 @@
 
   &--catalog {
     background-color: var(--basic-grey);
+
+    @media (min-width: 1280px) {
+      width: 570px;
+    }
   }
 }
 

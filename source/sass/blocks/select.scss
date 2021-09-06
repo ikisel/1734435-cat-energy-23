@@ -10,20 +10,32 @@
 .select__item {
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 3px;
 
-  @media (min-width: 768px) {
-    padding-top: 13px;
-    padding-bottom: 8px;
-    margin-left: 27px;
-    margin-top: 10px;
-    margin-bottom: 18px;
+  &--slim {
+    @media (min-width: 768px) {
+      margin-top: 19px;
+      margin-bottom: 5px;
+    }
   }
 
-  @media (min-width: 1280px) {
-    padding-top: 11px;
-    padding-bottom: 8px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+  &--pro {
+    @media (min-width: 768px) {
+      margin-top: 1px;
+      margin-bottom: 2px;
+    }
+  }
+
+  &--consultation {
+    @media (min-width: 768px) {
+      margin-top: 1px;
+      margin-bottom: 18px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 30px;
   }
 }
 
@@ -34,13 +46,13 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-left: 50px;
+  padding-left: 44px;
   color: var(--special-warm-dark);
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 60px;
+    padding-left: 58px;
   }
 }
 
@@ -49,8 +61,8 @@
   content: "";
   position: absolute;
   display: block;
-  top: 0;
-  left: 0;
+  top: -5px;
+  left: -4px;
   width: 30px;
   height: 30px;
   border: 1px solid var(--special-grey);
@@ -79,16 +91,16 @@
 .select__input:checked + label:focus::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 5px;
+  left: 6px;
   width: 13px;
   height: 13px;
   background-color: var(--basic-green);
   border-radius: 50%;
 
   @media (min-width: 768px) {
-    top: 12px;
-    left: 12px;
+    top: 6px;
+    left: 8px;
     width: 18px;
     height: 18px;
   }

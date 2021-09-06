@@ -1,6 +1,10 @@
 .map__iframe {
   border: none;
   width: 100%;
+
+  @media (min-width: 768px) {
+    height: 400px;
+  }
 }
 
 .map__wrapper {

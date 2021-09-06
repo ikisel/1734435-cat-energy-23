@@ -26,24 +26,22 @@
               <img class="page-header__logo-title-thumb" src="img/cat-energy.svg#logotype" width="101" height="18" alt="Логотип компании Кэт Энерджи">
             </a>
         </div>
-        <nav class="page-header__nav nav nav--closed nav--nojs">
-          <button class="nav__nav-toggle" type="button">
+        <nav class="page-header__nav nav nav--nojs">
+          <button class="nav__toggle" type="button" hidden>
             <span class="page__a11y-hidden">Открыть меню</span>
           </button>
-          <div class="nav__wrapper">
-            <ul class="nav__nav-list nav-list">
-              <li class="nav-list__item"><a class="nav-list__link nav-list__link--catalog" href="index.html">Главная</a></li>
-              <li class="nav-list__item"><a class="nav-list__link nav-list__link--catalog" href="catalog.html">Каталог продукции</a></li>
-              <li class="nav-list__item nav-list__item--current"><a class="nav-list__link nav-list__link--catalog" href="form.html">Подбор программы</a></li>
-            </ul>
-          </div>
+          <ul class="nav__list nav-list">
+            <li class="nav-list__item"><a class="nav-list__link" href="index.html">Главная</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="form.html" aria-current="page">Подбор программы</a></li>
+          </ul>
         </nav>
       </div>
     </header>
     <main class="page-main page-form">
       <section class="page-form__form form">
         <h1 class="form__title page__leveler">Подбор программы</h1>
-        <p class="form__description page__leveler">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__wrapper">
             <div class="form__name-option">
@@ -51,29 +49,29 @@
                 <legend class="page__a11y-hidden">Введите данные вашего кота</legend>
                 <div class="form__field">
                   <label class="form__label" for="name">Имя:*</label>
-                  <input class="form__input" type="text" id="name" name="name" placeholder="Барсик" required>
+                  <input class="form__input form__input--name" type="text" id="name" name="name" placeholder="Барсик" required>
                 </div>
                 <div class="form__field">
-                  <label class="form__label" for="weight">Вес (кг):*</label>
-                  <input class="form__input" type="text" id="weight" placeholder="7" required>
+                  <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
+                  <input class="form__input form__input--weight" type="text" id="weight" placeholder="7" required>
                 </div>
-                <div class="form__field">
+                <div class="form__field form__field--age">
                   <label class="form__label" for="age">Возраст (лет):</label>
-                  <input class="form__input" type="text" id="age" placeholder="7" required>
+                  <input class="form__input form__input--age" type="text" id="age" placeholder="7" required>
                 </div>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--option">
                 <legend class="page__a11y-hidden">Выберите программу</legend>
-                <ul class="form__list select form__list--select page__leveler">
-                  <li class="select__item">
+                <ul class="form__list select form__list--select">
+                  <li class="select__item select__item--slim">
                     <input class="select__input page__a11y-hidden" type="radio" name="select" value="slim" id="select" checked>
                     <label class="select__label" for="select">Похудение</label>
                   </li>
-                  <li class="select__item">
+                  <li class="select__item select__item--pro">
                     <input class="select__input page__a11y-hidden" type="radio" name="select" value="pro" id="pro">
                     <label class="select__label" for="pro">Набор массы</label>
                   </li>
-                  <li class="select__item">
+                  <li class="select__item select__item--consultation">
                     <input class="select__input page__a11y-hidden" type="radio" name="select" value="consultation" id="consultation">
                     <label class="select__label" for="consultation">Не знаю (нужен ваш совет)</label>
                   </li>
@@ -81,7 +79,7 @@
               </fieldset>
             </div>
             <fieldset class="form__fieldset form__fieldset--contacts page__leveler">
-              <legend class="form__legend">Контактные данные (владельца кота)</legend>
+              <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
               <div class="form__email-phone">
                 <div class="form__email">
                   <label class="form__label form__label--email" for="email">E-mail:*</label>
@@ -96,26 +94,26 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--comments page__leveler">
-              <legend class="form__legend">Комментарий</legend>
+              <legend class="form__legend form__legend--comment">Комментарий</legend>
               <label class="page__a11y-hidden" for="comment">Расскажите обо всех повадках кота</label>
               <textarea class="form__textarea form__input" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--checkbox page__leveler">
-              <legend class="form__legend">Дополнительно</legend>
+              <legend class="form__legend form__legend--more">Дополнительно</legend>
               <ul class="form__list more form__list--more">
                 <li class="more__item">
                   <input class="more__input page__a11y-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
                   <label class="more__label" for="sweetener">Сахарозаменитель</label>
                 </li>
-                <li class="more__item">
+                <li class="more__item more__item--water">
                   <input class="more__input page__a11y-hidden" type="checkbox" name="water" id="water">
                   <label class="more__label" for="water">Питьевая вода</label>
                 </li>
-                <li class="more__item">
+                <li class="more__item more__item--milk">
                   <input class="more__input page__a11y-hidden" type="checkbox" name="milk" id="milk">
                   <label class="more__label" for="milk">Молоко</label>
                 </li>
-                <li class="more__item">
+                <li class="more__item more__item--vitamins">
                   <input class="more__input page__a11y-hidden" type="checkbox" name="vitamins" id="vitamins">
                   <label class="more__label" for="vitamins">Витамины</label>
                 </li>
@@ -131,7 +129,7 @@
       <section class="partnership">
         <h2 class="page__a11y-hidden">Приглашение к сотрудничеству</h2>
         <section class="partnership__contacts contacts partnership__contacts--catalog">
-          <div class="contacts__wrapper page__leveler">
+          <div class="contacts__wrapper contacts__wrapper--catalog">
             <h3 class="page__a11y-hidden">Адрес компании Cat Energy</h3>
             <p class="contacts__text contacts__text--catalog">приглашаем <span class="contacts__accent">к сотрудничеству</span> дилеров!</p>
             <p class="contacts__location contacts__location--catalog">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
@@ -155,8 +153,8 @@
         <section class="page-footer__logo logo">
           <h2 class="page__a11y-hidden">Логотип компании Cat Energy</h2>
           <a class="logo__logo-title" href="index.html">
-            <img class="page-header__logo-title-thumb" src="img/cat-energy.svg#logotype" width="101" height="18" alt="Логотип компании Кэт Энерджи">
-        </a>
+              <img class="page-header__logo-title-thumb page-header__logo-title-thumb--footer" src="img/cat-energy.svg#logotype" width="101" height="18" alt="Логотип компании Кэт Энерджи">
+          </a>
         </section>
         <section class="page-footer__social social">
           <h2 class="page__a11y-hidden">Cat Energy в социальных сетях</h2>

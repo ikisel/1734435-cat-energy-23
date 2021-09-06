@@ -1,3 +1,9 @@
+.page-header {
+  @media (max-width: 767px) {
+    border-bottom: 1px solid var(--special-lightest-grey);
+  }
+}
+
 .page-header__wrapper {
   align-items: center;
 

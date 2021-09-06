@@ -1,84 +1,58 @@
 .nav {
-  @media (min-width: 768px) {
-    display: block;
+  @media (max-width: 767px) {
+    position: relative;
+
+    &--opened {
+      --nav-icon: url("../../icons/sprite.svg#burger");
+    }
+
+    &--closed {
+      --nav-icon: url("../../icons/sprite.svg#cross");
+      --is-nav-visible: none;
+    }
+
+    &--nojs {
+      --nav-position: static;
+      --is-toggel-visible: none;
+    }
   }
 }
 
-.nav__nav-toggle {
-  display: block;
+.nav__toggle {
   border: none;
   padding: 0;
+  background-color: transparent;
 
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
-.nav--nojs .nav__wrapper {
-  position: static;
-  min-height: 0;
-}
-
-.nav--nojs .nav__nav-toggle {
-  display: none;
-}
-
-.nav--nojs .nav-list__item {
-  display: block;
-}
-
-.nav--closed .nav__nav-toggle::before {
-  content: "";
-  position: absolute;
-  top: 22px;
-  right: 20px;
-  width: 24px;
-  height: 1.5px;
-  background-color: var(--basic-black);
-  box-shadow: 0 8px 0 0 var(--basic-black), 0 16px 0 0 var(--basic-black);
-}
-
-.nav--opened .nav__nav-toggle {
-  top: 0;
-  right: 0;
-  left: auto;
-
-  &::before,
-  &::after {
-    content: "";
+  @media (max-width: 767px) {
     position: absolute;
-    top: 25px;
-    right: 12px;
-    width: 24px;
-    height: 1.5px;
-    background-color: var(--basic-black);
+    top: -45px;
+    right: 0;
+    display: var(--is-toggel-visible, flex);
+    gap: 12px;
   }
 
   &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-.nav--closed .nav-list__item {
-  display: none;
-
-  @media (min-width: 768px) {
-    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: var(--nav-icon) no-repeat center / cover;
   }
 }
 
-.nav--opened .nav-list,
-.nav--nojs .nav-list {
-  position: absolute;
-  content: "";
-  width: 320px;
-  height: 198px;
-  top: 65px;
-  left: 0;
-  background-color: var(--basic-white);
-  z-index: 100;
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: 767px) {
+    display: var(--is-nav-visible);
+    position: var(--nav-position, absolute);
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--basic-white);
+    box-shadow:
+      50vw 0 0 0 var(--basic-white),
+      -50vw 0 0 0 var(--basic-white);
+  }
 }

@@ -3,11 +3,11 @@
     position: relative;
 
     &--opened {
-      --nav-icon: url("../../icons/sprite.svg#burger");
+      --nav-icon: url("../../icons/sprite.svg#cross");
     }
 
     &--closed {
-      --nav-icon: url("../../icons/sprite.svg#cross");
+      --nav-icon: url("../../icons/sprite.svg#burger");
       --is-nav-visible: none;
     }
 

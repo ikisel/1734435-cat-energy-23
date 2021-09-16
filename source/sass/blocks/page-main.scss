@@ -1,3 +1,26 @@
 .page-main {
   display: grid;
 }
+
+.page-main__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  padding: 27px 20px 39px;
+  border-top: 1px solid var(--special-active-grey);
+  border-bottom: 1px solid var(--special-active-grey);
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 39px;
+    margin-bottom: 33px;
+    border: none;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 49px;
+    margin-bottom: 36px;
+  }
+}

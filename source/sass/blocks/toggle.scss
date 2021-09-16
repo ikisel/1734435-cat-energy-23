@@ -37,6 +37,10 @@
   }
 
   &--before {
+    @media (max-width: 767.5px) {
+      padding-right: 17px;
+    }
+
     @media (min-width: 768px) {
       margin-right: 9px;
     }
@@ -47,6 +51,10 @@
   }
 
   &--after {
+    @media (max-width: 767.5px) {
+      padding-left: 17px;
+    }
+
     @media (min-width: 768px) {
       margin-left: 14px;
     }

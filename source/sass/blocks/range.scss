@@ -6,6 +6,10 @@
   border: 1px solid var(--special-grey);
   background-color: var(--basic-white);
 
+  @media (max-width: 767.5px) {
+    box-sizing: border-box;
+  }
+
   @media (min-width: 768px) {
     --scale-size: 428px;
     height: 6px;

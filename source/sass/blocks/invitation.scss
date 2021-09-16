@@ -6,27 +6,24 @@
   }
 
   &::before {
+    --bg-image: url("../../img/background-cat@1x.png");
     position: absolute;
     content: "";
     width: 100%;
     height: 302px;
-    background-color: var(--special-darkness-grey);
-    background-image:
+    background:
       linear-gradient(
       var(--basic-green-gradient),
       var(--basic-green-gradient)),
-      url("../../img/background-cat@1x.png");
+      var(--bg-image);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: contain;
+    background-color: var(--special-darkness-grey);
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient(
-        var(--basic-green-gradient),
-        var(--basic-green-gradient)),
-        url("../../img/background-cat@2x.png");
+      --bg-image: url("../../img/background-cat@2x.png");
     }
 
     @media (min-width: 768px) {
@@ -34,27 +31,17 @@
     }
 
     @media (min-width: 1280px) {
+      --bg-image: url("../../img/background-desktop@1x.png");
       content: "";
       width: 50%;
       height: 694px;
       top: 0;
       left: 50%;
-      background-image:
-        linear-gradient(
-        var(--basic-green-gradient),
-        var(--basic-green-gradient)),
-        url("../../img/background-desktop@1x.png");
-      background-size: contain;
-      background-position: left;
+      background-position: right, left;
 
       @media (min-resolution: 2dppx) {
-        background-image:
-          linear-gradient(
-          var(--basic-green-gradient),
-          var(--basic-green-gradient)),
-          url("../../img/background-desktop@2x.png");
-        background-size: contain;
-        background-position: left;
+        --bg-image: url("../../img/background-desktop@2x.png");
+        background-position: right;
       }
     }
   }

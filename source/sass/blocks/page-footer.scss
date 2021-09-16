@@ -1,6 +1,10 @@
 .page-footer {
   background-color: var(--basic-grey);
   z-index: 0;
+
+  @media (max-width: 767.5px) {
+    padding-top: 5px;
+  }
 }
 
 .page-footer__wrapper {

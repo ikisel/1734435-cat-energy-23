@@ -23,12 +23,6 @@
     color: var(--special);
     text-decoration: none;
 
-    &:hover,
-    &:focus {
-      color: var(--basic-green);
-      transition: color 0.2s ease;
-    }
-
     &:active {
       opacity: 0.3;
     }

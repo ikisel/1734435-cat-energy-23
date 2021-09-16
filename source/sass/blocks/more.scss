@@ -18,11 +18,16 @@
   padding-top: 6px;
   padding-bottom: 6px;
   margin-top: 5px;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 
   @media (min-width: 768px) {
     margin-top: 14px;
     margin-bottom: 15px;
+    margin-left: 6px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 0;
   }
 
   &--water {

@@ -6,7 +6,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 193px;
+    top: 207px;
     left: -100vw;
     right: 0;
     height: 1px;
@@ -98,9 +98,10 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  margin-top: 10px;
-  margin-bottom: 11px;
   text-align: center;
+  margin: 0;
+  padding-right: 45px;
+  padding-bottom: 14px;
   color: var(--special-warm-dark);
   text-transform: uppercase;
 
@@ -184,6 +185,8 @@
 .card__sublist {
   grid-column: 2/3;
   grid-row: 2/3;
+  margin: 0;
+  padding-bottom: 22px;
 
   @media (min-width: 768px) {
     margin-left: 35px;
@@ -192,7 +195,6 @@
 }
 
 .card__list {
-  margin-bottom: 7px;
   list-style: none;
 
   @media (min-width: 768px) {
@@ -214,7 +216,7 @@
   text-align: center;
   background-color: var(--basic-green);
   padding-top: 10px;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
 
   @media (min-width: 768px) {
     margin-left: 39px;

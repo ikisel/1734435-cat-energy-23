@@ -7,11 +7,12 @@
     content: "";
     position: absolute;
     top: 193px;
-    left: 0;
-    width: 100%;
+    left: -100vw;
+    right: 0;
     height: 1px;
     background-color: var(--special-active-grey);
-    // box-shadow: 0 -30vw 0 0 var(--special-active-grey), 0 30vw 0 0 var(--special-active-grey);
+    box-shadow: 100vw 0 0 0 var(--special-active-grey);
+
     @media (min-width: 768px) {
       display: none;
     }
@@ -49,6 +50,10 @@
   @media (min-width: 768px) {
     align-self: center;
   }
+}
+
+.card__link {
+  text-decoration: none;
 }
 
 .card__thumb {

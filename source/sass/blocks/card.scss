@@ -54,6 +54,8 @@
 
 .card__link {
   text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .card__thumb {
@@ -63,13 +65,13 @@
   @media (min-width: 768px) {
     width: 168px;
     height: 206px;
-    margin-top: -72px;
+    margin-top: -93px;
   }
 
   @media (min-width: 1280px) {
     width: 172px;
     height: 196px;
-    margin-top: -75px;
+    margin-top: -96px;
   }
 
   &--half {
@@ -79,11 +81,11 @@
     @media (min-width: 768px) {
       width: 161px;
       height: 172px;
-      margin-top: -44px;
+      margin-top: -65px;
     }
 
     @media (min-width: 1280px) {
-      margin-top: -52px;
+      margin-top: -72px;
     }
   }
 }
@@ -110,7 +112,8 @@
     font-size: 20px;
     line-height: 24px;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-right: 0;
   }
 
   @media (min-width: 1280px) {
@@ -123,24 +126,22 @@
     width: 100%;
     color: var(--special-dark);
     text-align: center;
-    margin-bottom: 7px;
 
     @media (min-width: 768px) {
       width: 134px;
-      padding-bottom: 5px;
+      padding-top: 14px;
     }
 
     @media (min-width: 1280px) {
       font-size: 20px;
       line-height: 22px;
-      padding-top: 22px;
-      margin-bottom: 9px;
+      padding-top: 18px;
     }
   }
 
   &--half {
     @media (min-width: 768px) {
-      padding-top: 31px;
+      padding-top: 27px;
     }
 
     @media (min-width: 1280px) {
@@ -167,11 +168,12 @@
   }
 
   &--more {
-    margin-top: 0;
+    margin-top: -6px;
+    padding-bottom: 0;
 
     @media (min-width: 768px) {
       width: 167px;
-      padding-top: 8px;
+      padding-top: 11px;
       padding-bottom: 5px;
       margin: 0 auto 77px;
     }
@@ -191,6 +193,7 @@
   @media (min-width: 768px) {
     margin-left: 35px;
     margin-right: 35px;
+    margin-bottom: -7px;
   }
 }
 
@@ -206,6 +209,7 @@
   }
 
   &--more {
+    margin-top: 9px;
     margin-bottom: 0;
   }
 }
@@ -250,12 +254,12 @@
   text-align: center;
 
   &--more {
-    padding-top: 12px;
+    padding-top: 6px;
     align-self: center;
     height: 35px;
 
     @media (min-width: 768px) {
-      padding-top: 54px;
+      padding-top: 29px;
       padding-bottom: 23px;
     }
 

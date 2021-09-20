@@ -100,7 +100,6 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  text-align: center;
   margin: 0;
   padding-right: 45px;
   padding-bottom: 14px;
@@ -114,6 +113,7 @@
     margin: 0 auto;
     padding-top: 20px;
     padding-right: 0;
+    text-align: center;
   }
 
   @media (min-width: 1280px) {
@@ -228,6 +228,7 @@
   }
 
   &--show {
+    margin-top: 9px;
     background-color: var(--basic-grey);
 
     &:hover,

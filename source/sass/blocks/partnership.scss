@@ -19,8 +19,12 @@
 
   &--catalog {
     background-color: var(--basic-grey);
+    box-shadow:
+      50vw 0 0 0 var(--basic-grey),
+      -50vw 0 0 0 var(--basic-grey);
 
     @media (min-width: 1280px) {
+      box-shadow: none;
       width: 570px;
     }
   }
